@@ -1,0 +1,16 @@
+[green_agent]
+agentbeats_id = "019ba211-13b7-7e83-9086-c8015a5e4957"
+env = { NEBIUS_API_KEY = "${NEBIUS_API_KEY}" }
+
+[[participants]]
+agentbeats_id = "019ba27e-3b82-7d43-8822-51357ccd4861"
+name = "agent"
+env = { NEBIUS_API_KEY = "${NEBIUS_API_KEY}" }
+
+[config]
+task_limit = 10
+drift_level = "none"
+rot_level = "none"
+max_steps = 15
+timeout = 300
+org_type = "b2b"
