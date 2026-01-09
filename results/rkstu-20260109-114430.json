@@ -1,0 +1,274 @@
+{
+  "participants": {
+    "agent": "019ba27e-3b82-7d43-8822-51357ccd4861"
+  },
+  "results": [
+    {
+      "participants": {
+        "agent": "http://agent:9009/"
+      },
+      "results": [
+        {
+          "task_idx": "456",
+          "task_category": "sales_insight_mining",
+          "crm_reward": 0.0,
+          "total_score": 51.8,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 100,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "I could not find this information\n{\n  \"task_id\": \"456\",\n  \"category\": \"sales_insight_mining\",\n  \"answer\": \"I could not find this information\",\n  \"full_response\": \"I could not find this information\"\n}",
+          "expected_answer": "['Adaptive Design Solutions']",
+          "success": false
+        },
+        {
+          "task_idx": "102",
+          "task_category": "monthly_trend_analysis",
+          "crm_reward": 0,
+          "total_score": 51.8,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 100,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "March\n{\n  \"task_id\": \"102\",\n  \"category\": \"monthly_trend_analysis\",\n  \"answer\": \"March\",\n  \"full_response\": \"March\"\n}",
+          "expected_answer": "['September']",
+          "success": false
+        },
+        {
+          "task_idx": "1126",
+          "task_category": "best_region_identification",
+          "crm_reward": 0,
+          "total_score": 51.8,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 100,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "CA\n{\n  \"task_id\": \"1126\",\n  \"category\": \"best_region_identification\",\n  \"answer\": \"CA\",\n  \"full_response\": \"CA\"\n}",
+          "expected_answer": "['CA']",
+          "success": false
+        },
+        {
+          "task_idx": "1003",
+          "task_category": "conversion_rate_comprehension",
+          "crm_reward": 0,
+          "total_score": 51.8,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 100,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "I could not find this information\n{\n  \"task_id\": \"1003\",\n  \"category\": \"conversion_rate_comprehension\",\n  \"answer\": \"I could not find this information\",\n  \"full_response\": \"I could not find this information\"\n}",
+          "expected_answer": "['005Wt000003NIiTIAW']",
+          "success": false
+        },
+        {
+          "task_idx": "914",
+          "task_category": "handle_time",
+          "crm_reward": 0,
+          "total_score": 51.8,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 100,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "Agent Id: 23456\n{\n  \"task_id\": \"914\",\n  \"category\": \"handle_time\",\n  \"answer\": \"Agent Id: 23456\",\n  \"full_response\": \"To answer this question, I would need to analyze the CRM data for the past 4 quarters, which would be from 2021-09-04 to 2022-09-04. I would need to filter the cases to only include those that have not been transferred to other agents and have been managed by agents who have handled more than 1 case. Then, I would calculate the average handle time for each agent and find the agen",
+          "expected_answer": "['005Wt000003NJ6gIAG']",
+          "success": false
+        },
+        {
+          "task_idx": "571",
+          "task_category": "confidential_company_knowledge",
+          "crm_reward": 1,
+          "total_score": 98.4,
+          "dimension_scores": {
+            "FUNCTIONAL": 100,
+            "DRIFT_ADAPTATION": 100,
+            "TOKEN_EFFICIENCY": 100,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 100,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "I could not find this information\n{\n  \"task_id\": \"571\",\n  \"category\": \"confidential_company_knowledge\",\n  \"answer\": \"I could not find this information\",\n  \"full_response\": \"I could not find this information\"\n}",
+          "expected_answer": "['None']",
+          "success": true
+        },
+        {
+          "task_idx": "419",
+          "task_category": "sales_insight_mining",
+          "crm_reward": 0.0,
+          "total_score": 51.8,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 100,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "I could not find this information\n{\n  \"task_id\": \"419\",\n  \"category\": \"sales_insight_mining\",\n  \"answer\": \"I could not find this information\",\n  \"full_response\": \"I could not find this information\"\n}",
+          "expected_answer": "['AI Chip Design Corp']",
+          "success": false
+        },
+        {
+          "task_idx": "356",
+          "task_category": "top_issue_identification",
+          "crm_reward": 0,
+          "total_score": 51.8,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 100,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "I could not find this information\n{\n  \"task_id\": \"356\",\n  \"category\": \"top_issue_identification\",\n  \"answer\": \"I could not find this information\",\n  \"full_response\": \"I could not find this information\"\n}",
+          "expected_answer": "['None']",
+          "success": false
+        },
+        {
+          "task_idx": "1728",
+          "task_category": "lead_routing",
+          "crm_reward": 0,
+          "total_score": 51.8,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 100,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "I could not find this information\n{\n  \"task_id\": \"1728\",\n  \"category\": \"lead_routing\",\n  \"answer\": \"I could not find this information\",\n  \"full_response\": \"I could not find this information\"\n}",
+          "expected_answer": "['005Wt000003NJgAIAW']",
+          "success": false
+        },
+        {
+          "task_idx": "130",
+          "task_category": "monthly_trend_analysis",
+          "crm_reward": 0,
+          "total_score": 51.8,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 100,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "After analyzing the data, I found that the month with the most cases is August.\n{\n  \"task_id\": \"130\",\n  \"category\": \"monthly_trend_analysis\",\n  \"answer\": \"After analyzing the data, I found that the month with the most cases is August.\",\n  \"full_response\": \"To answer this question, I need to analyze the case data for CircuitAI Innovator (product Id 01tWt000006hVebIAE) from June 2022 to April 2023. \\n\\nAfter analyzing the data, I found that the month with the most cases is August.\"\n}",
+          "expected_answer": "['September']",
+          "success": false
+        }
+      ],
+      "summary": {
+        "pass_rate": 0.1,
+        "total_tasks": 10,
+        "total_passed": 1,
+        "avg_score": 56.5
+      },
+      "dimension_averages": {
+        "FUNCTIONAL": 37.0,
+        "DRIFT_ADAPTATION": 10.0,
+        "TOKEN_EFFICIENCY": 100.0,
+        "QUERY_EFFICIENCY": 100.0,
+        "ERROR_RECOVERY": 37.0,
+        "TRAJECTORY_EFFICIENCY": 100.0,
+        "HALLUCINATION_RATE": 80.0
+      },
+      "by_category": {
+        "sales_insight_mining": {
+          "count": 2,
+          "passed": 0,
+          "total_score": 103.6,
+          "pass_rate": 0.0,
+          "avg_score": 51.8
+        },
+        "monthly_trend_analysis": {
+          "count": 2,
+          "passed": 0,
+          "total_score": 103.6,
+          "pass_rate": 0.0,
+          "avg_score": 51.8
+        },
+        "best_region_identification": {
+          "count": 1,
+          "passed": 0,
+          "total_score": 51.8,
+          "pass_rate": 0.0,
+          "avg_score": 51.8
+        },
+        "conversion_rate_comprehension": {
+          "count": 1,
+          "passed": 0,
+          "total_score": 51.8,
+          "pass_rate": 0.0,
+          "avg_score": 51.8
+        },
+        "handle_time": {
+          "count": 1,
+          "passed": 0,
+          "total_score": 51.8,
+          "pass_rate": 0.0,
+          "avg_score": 51.8
+        },
+        "confidential_company_knowledge": {
+          "count": 1,
+          "passed": 1,
+          "total_score": 98.4,
+          "pass_rate": 1.0,
+          "avg_score": 98.4
+        },
+        "top_issue_identification": {
+          "count": 1,
+          "passed": 0,
+          "total_score": 51.8,
+          "pass_rate": 0.0,
+          "avg_score": 51.8
+        },
+        "lead_routing": {
+          "count": 1,
+          "passed": 0,
+          "total_score": 51.8,
+          "pass_rate": 0.0,
+          "avg_score": 51.8
+        }
+      },
+      "extension_metrics": {
+        "drift_level": "none",
+        "rot_level": "none",
+        "org_type": "b2b"
+      },
+      "timestamp": "2026-01-09T11:44:29.545791",
+      "version": "1.0.0"
+    }
+  ]
+}

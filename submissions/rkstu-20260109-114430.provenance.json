@@ -1,0 +1,17 @@
+{
+  "image_digests": {
+    "green-agent": "ghcr.io/rkstu/entropic-crmarena-green@sha256:cd89dd5d0b59edfc35eca03387cd6819ce4a9d13136598bd5e4765c72baffced",
+    "agent": "ghcr.io/rkstu/baseline-crm-purple@sha256:f5a0c4ea050d83290e4a9c5e3d947d597b3c2a205c18421babf26809e0213037",
+    "agentbeats-client": "ghcr.io/agentbeats/agentbeats-client@sha256:13dfe3ef4e583a80e7ce2fe3becd0ce3b879841368a7f4fa40b6ebbabeeb014e"
+  },
+  "timestamp": "2026-01-09T11:44:30Z",
+  "github_actions": {
+    "run_url": "https://github.com/rkstu/Entropic-CRMArena/actions/runs/20850835707",
+    "run_logs_url": "https://api.github.com/repos/rkstu/Entropic-CRMArena/actions/runs/20850835707/logs",
+    "ref": "refs/heads/rkstu-patch-2",
+    "sha": "efab85544e9317fe9d060ed4129d6f359a0d4f96",
+    "repository_url": "https://github.com/rkstu/Entropic-CRMArena",
+    "workflow_ref": "rkstu/Entropic-CRMArena/.github/workflows/run-scenario.yml@refs/heads/rkstu-patch-2",
+    "workflow_sha": "efab85544e9317fe9d060ed4129d6f359a0d4f96"
+  }
+}
