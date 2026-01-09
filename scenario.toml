@@ -1,16 +1,18 @@
 [green_agent]
-agentbeats_id = ""
-env = { API_KEY = "${GITHUB_SECRET_NAME}", LOG_LEVEL = "INFO" }
+image = "ghcr.io/rkstu/entropic-crmarena-green:latest"
+env = { NEBIUS_API_KEY = "${NEBIUS_API_KEY}" }
 
 [[participants]]
-agentbeats_id = ""
-name = "role_1_name"
-env = {}
-
-[[participants]]
-agentbeats_id = ""
-name = "role_2_name"
-env = {}
+agentbeats_id = "019ba27e-3b82-7d43-8822-51357ccd4861"
+name = "agent"
+image = "ghcr.io/rkstu/baseline-crm-purple:latest"
+env = { NEBIUS_API_KEY = "${NEBIUS_API_KEY}" }
 
 [config]
-# Add your assessment config here
+# Entropic CRMArena assessment config
+task_limit = 10
+drift_level = "none"
+rot_level = "none"
+max_steps = 15
+timeout = 300
+org_type = "b2b"
