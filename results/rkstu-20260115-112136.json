@@ -1,0 +1,380 @@
+{
+  "participants": {
+    "agent": "019ba27e-3b82-7d43-8822-51357ccd4861"
+  },
+  "results": [
+    {
+      "participants": {
+        "agent": "http://agent:9009/"
+      },
+      "results": [
+        {
+          "task_idx": "456",
+          "task_category": "sales_insight_mining",
+          "crm_reward": 1.0,
+          "total_score": 99.84736,
+          "dimension_scores": {
+            "FUNCTIONAL": 100.0,
+            "DRIFT_ADAPTATION": 100,
+            "TOKEN_EFFICIENCY": 98.728,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 100,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 100
+          },
+          "agent_answer": "Quantum Circuits Inc.\n{\n  \"task_id\": \"456\",\n  \"category\": \"sales_insight_mining\",\n  \"answer\": \"Quantum Circuits Inc.\",\n  \"full_response\": \"<think>\\nOkay, let's analyze the provided transcripts to identify competitors where we're at a disadvantage. The user wants to know which competitors are mentioned in a context where we're struggling or they have an advantage.\\n\\nLooking at the first transcript from February 8th, there's a mention of \\\"Quantum Circuits Inc.\\\" when discussing case studies. The",
+          "expected_answer": "['Adaptive Design Solutions']",
+          "success": true,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 318,
+            "tool_calls": 4,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 38.05,
+            "purple_agent_seconds": 38.05,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          }
+        },
+        {
+          "task_idx": "102",
+          "task_category": "monthly_trend_analysis",
+          "crm_reward": 0,
+          "total_score": 51.71072,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 99.256,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "September\n{\n  \"task_id\": \"102\",\n  \"category\": \"monthly_trend_analysis\",\n  \"answer\": \"September\",\n  \"full_response\": \"<think> The query consistently returns September with 1 case, indicating that there's only one case in the specified period. Since the user is asking for a month with significantly higher cases, but the data shows only one case, the answer must be September as it's the only month with cases in the last 6 quarters. The initial thought about November might have been incorrect due to",
+          "expected_answer": "['September']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 186,
+            "tool_calls": 0,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 59.98,
+            "purple_agent_seconds": 59.98,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          }
+        },
+        {
+          "task_idx": "1126",
+          "task_category": "best_region_identification",
+          "crm_reward": 0,
+          "total_score": 53.0712,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 98.76,
+            "QUERY_EFFICIENCY": 98.5,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 100
+          },
+          "agent_answer": "May\n{\n  \"task_id\": \"1126\",\n  \"category\": \"best_region_identification\",\n  \"answer\": \"May\",\n  \"full_response\": \"<think> The query returns no rows, indicating no cases meet the criteria. This could be due to incorrect date filtering or no closed cases in the past six weeks. Let me adjust the date calculation to ensure it's exactly six weeks prior. Today is 2023-10-13, so six weeks back is 2023-09-01. Maybe using >= '2023-09-01' is correct, but perhaps the CreatedDate should be within the past six w",
+          "expected_answer": "['CA']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 310,
+            "tool_calls": 4,
+            "queries": 1
+          },
+          "timing": {
+            "total_seconds": 78.74,
+            "purple_agent_seconds": 78.74,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          }
+        },
+        {
+          "task_idx": "1003",
+          "task_category": "conversion_rate_comprehension",
+          "crm_reward": 0,
+          "total_score": 51.73424,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 99.452,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "005Wt000003NJRdIAO\n{\n  \"task_id\": \"1003\",\n  \"category\": \"conversion_rate_comprehension\",\n  \"answer\": \"005Wt000003NJRdIAO\",\n  \"full_response\": \"<think>\\nThe SQL query executed successfully and returned one agent ID: 005Wt000003NJRdIAO. This must be the agent with the lowest conversion rate as per the calculation. Since the problem asks for only the ID, this is the answer.\\n</thought>\\n<respond> 005Wt000003NJRdIAO </respond>\",\n  \"metrics\": {\n    \"tokens\": 11273,\n    \"tool_calls\": 2,\n    \"queries\":",
+          "expected_answer": "['005Wt000003NIiTIAW']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 137,
+            "tool_calls": 0,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 68.19,
+            "purple_agent_seconds": 68.19,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          }
+        },
+        {
+          "task_idx": "914",
+          "task_category": "handle_time",
+          "crm_reward": 0,
+          "total_score": 0,
+          "dimension_scores": {},
+          "error": "Timeout Error: Client Request timed out",
+          "success": false
+        },
+        {
+          "task_idx": "571",
+          "task_category": "confidential_company_knowledge",
+          "crm_reward": 1,
+          "total_score": 98.29584,
+          "dimension_scores": {
+            "FUNCTIONAL": 100,
+            "DRIFT_ADAPTATION": 100,
+            "TOKEN_EFFICIENCY": 99.132,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 100,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "AI Cirku-Tech, CircuitAI Innovator, EcoPCB Creator, QuantumPCB Modeler, SecureAnalytics Pro, SecureFlow Suite, CloudLink Designer, EduTech Advance\n{\n  \"task_id\": \"571\",\n  \"category\": \"confidential_company_knowledge\",\n  \"answer\": \"AI Cirku-Tech, CircuitAI Innovator, EcoPCB Creator, QuantumPCB Modeler, SecureAnalytics Pro, SecureFlow Suite, CloudLink Designer, EduTech Advance\",\n  \"full_response\": \"<think> The query returned 8 distinct product names that are bundled with PulseSim Pro. The answer sh",
+          "expected_answer": "['None']",
+          "success": true,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 217,
+            "tool_calls": 0,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 141.7,
+            "purple_agent_seconds": 141.7,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          }
+        },
+        {
+          "task_idx": "419",
+          "task_category": "sales_insight_mining",
+          "crm_reward": 0.0,
+          "total_score": 51.44816,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 98.568,
+            "QUERY_EFFICIENCY": 98.5,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "Business problems and pain points, Pricing and competitive analysis, Implementation process and support\n{\n  \"task_id\": \"419\",\n  \"category\": \"sales_insight_mining\",\n  \"answer\": \"Business problems and pain points, Pricing and competitive analysis, Implementation process and support\",\n  \"full_response\": \"<think>\\nOkay, let's tackle this. The user wants to know which competitors pose challenges for the opportunity with ID 006Wt000007BEWhIAO based on the sales discussions. \\n\\nFirst, I need to look a",
+          "expected_answer": "['AI Chip Design Corp']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 358,
+            "tool_calls": 0,
+            "queries": 1
+          },
+          "timing": {
+            "total_seconds": 28.68,
+            "purple_agent_seconds": 28.68,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          }
+        },
+        {
+          "task_idx": "356",
+          "task_category": "top_issue_identification",
+          "crm_reward": 0,
+          "total_score": 53.06592,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 98.716,
+            "QUERY_EFFICIENCY": 98.5,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 100
+          },
+          "agent_answer": "01tWt000006hVebIAE\n{\n  \"task_id\": \"356\",\n  \"category\": \"top_issue_identification\",\n  \"answer\": \"01tWt000006hVebIAE\",\n  \"full_response\": \"<thought>Alright, the error persists, so the Case table definitely doesn't have an \\\"Issue__c\\\" column. This means the relationship between Case and Issue__c isn't direct. Maybe the Issue__c is linked through another table, like a junction object, but without knowing the schema, it's hard to say.\\n\\nAlternatively, perhaps the problem is stored in the Case's \\\"S",
+          "expected_answer": "['None']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 321,
+            "tool_calls": 3,
+            "queries": 1
+          },
+          "timing": {
+            "total_seconds": 258.7,
+            "purple_agent_seconds": 258.7,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          }
+        },
+        {
+          "task_idx": "1728",
+          "task_category": "lead_routing",
+          "crm_reward": 0,
+          "total_score": 51.74288,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 99.524,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "005Wt000003NJgAIAW\n{\n  \"task_id\": \"1728\",\n  \"category\": \"lead_routing\",\n  \"answer\": \"005Wt000003NJgAIAW\",\n  \"full_response\": \"<thought> The query correctly identified the agent with the highest quote success and lowest workload. The result shows the OwnerId as 005Wt000003NJgAIAW, which is the agent's ID. </thought>\\n<respond> 005Wt000003NJgAIAW </respond>\",\n  \"metrics\": {\n    \"tokens\": 4983,\n    \"tool_calls\": 1,\n    \"queries\": 1,\n    \"turns\": 2,\n    \"failed_queries\": 0\n  }\n}",
+          "expected_answer": "['005Wt000003NJgAIAW']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 119,
+            "tool_calls": 0,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 46.32,
+            "purple_agent_seconds": 46.32,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          }
+        },
+        {
+          "task_idx": "130",
+          "task_category": "monthly_trend_analysis",
+          "crm_reward": 0,
+          "total_score": 53.24976,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 98.748,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 100
+          },
+          "agent_answer": "September\n{\n  \"task_id\": \"130\",\n  \"category\": \"monthly_trend_analysis\",\n  \"answer\": \"September\",\n  \"full_response\": \"<think>\\nOkay, let me see. The user asked for the month where the number of cases for the product significantly exceeds others in the past 11 months. The SQL query I ran returned a result with month_num \\\"09\\\" and case_count 1. Wait, that's only one case? That doesn't seem like it's significantly higher. Maybe I made a mistake in the date filter?\\n\\nHold on, the current date is Ma",
+          "expected_answer": "['September']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 313,
+            "tool_calls": 1,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 41.58,
+            "purple_agent_seconds": 41.58,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          }
+        }
+      ],
+      "summary": {
+        "pass_rate": 0.2,
+        "total_tasks": 10,
+        "total_passed": 2,
+        "avg_score": 56.4
+      },
+      "dimension_averages": {
+        "FUNCTIONAL": 45.6,
+        "DRIFT_ADAPTATION": 22.2,
+        "TOKEN_EFFICIENCY": 99.0,
+        "QUERY_EFFICIENCY": 99.5,
+        "ERROR_RECOVERY": 45.6,
+        "TRAJECTORY_EFFICIENCY": 100.0,
+        "HALLUCINATION_RATE": 88.9
+      },
+      "by_category": {
+        "sales_insight_mining": {
+          "count": 2,
+          "passed": 1,
+          "total_score": 151.29552,
+          "pass_rate": 0.5,
+          "avg_score": 75.64776
+        },
+        "monthly_trend_analysis": {
+          "count": 2,
+          "passed": 0,
+          "total_score": 104.96048,
+          "pass_rate": 0.0,
+          "avg_score": 52.48024
+        },
+        "best_region_identification": {
+          "count": 1,
+          "passed": 0,
+          "total_score": 53.0712,
+          "pass_rate": 0.0,
+          "avg_score": 53.0712
+        },
+        "conversion_rate_comprehension": {
+          "count": 1,
+          "passed": 0,
+          "total_score": 51.73424,
+          "pass_rate": 0.0,
+          "avg_score": 51.73424
+        },
+        "handle_time": {
+          "count": 1,
+          "passed": 0,
+          "total_score": 0,
+          "pass_rate": 0.0,
+          "avg_score": 0.0
+        },
+        "confidential_company_knowledge": {
+          "count": 1,
+          "passed": 1,
+          "total_score": 98.29584,
+          "pass_rate": 1.0,
+          "avg_score": 98.29584
+        },
+        "top_issue_identification": {
+          "count": 1,
+          "passed": 0,
+          "total_score": 53.06592,
+          "pass_rate": 0.0,
+          "avg_score": 53.06592
+        },
+        "lead_routing": {
+          "count": 1,
+          "passed": 0,
+          "total_score": 51.74288,
+          "pass_rate": 0.0,
+          "avg_score": 51.74288
+        }
+      },
+      "extension_metrics": {
+        "drift_level": "none",
+        "rot_level": "none",
+        "org_type": "b2b"
+      },
+      "timestamp": "2026-01-15T11:21:35.341194",
+      "version": "1.0.0",
+      "timing": {
+        "total_seconds": 1066.91,
+        "purple_agent_seconds": 761.94,
+        "green_agent_seconds": 0.0,
+        "avg_seconds_per_task": 106.69,
+        "purple_agent_percent": 71.4
+      }
+    }
+  ]
+}
