@@ -5,11 +5,10 @@ env = { NEBIUS_API_KEY = "${NEBIUS_API_KEY}" }
 [[participants]]
 agentbeats_id = "019ba27e-3b82-7d43-8822-51357ccd4861"
 name = "agent"
-image = "ghcr.io/rkstu/baseline-crm-purple:latest"
+image = "ghcr.io/rkstu/baseline-crm-agent:latest"
 env = { NEBIUS_API_KEY = "${NEBIUS_API_KEY}" }
 
 [config]
-# Entropic CRMArena assessment config
 task_limit = 10
 drift_level = "none"
 rot_level = "none"
