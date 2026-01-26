@@ -1,0 +1,401 @@
+{
+  "participants": {
+    "agent": "019ba27e-3b82-7d43-8822-51357ccd4861"
+  },
+  "results": [
+    {
+      "participants": {
+        "agent": "http://agent:9009/"
+      },
+      "results": [
+        {
+          "task_idx": "456",
+          "task_category": "sales_insight_mining",
+          "crm_reward": 1.0,
+          "total_score": 99.84112,
+          "dimension_scores": {
+            "FUNCTIONAL": 100.0,
+            "DRIFT_ADAPTATION": 100,
+            "TOKEN_EFFICIENCY": 98.676,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 100,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 100
+          },
+          "agent_answer": "Quantum Circuits Inc., Adaptive Design Solutions\n{\n  \"task_id\": \"456\",\n  \"category\": \"sales_insight_mining\",\n  \"answer\": \"Quantum Circuits Inc., Adaptive Design Solutions\",\n  \"full_response\": \"<think>\\nOkay, let's analyze the provided transcripts to identify competitors where we're at a disadvantage. The user wants to know which competitors are mentioned in a way that puts us at a disadvantage in sales discussions for the opportunity.\\n\\nLooking at the first transcript, there's a mention of \\\"Qu",
+          "expected_answer": "['Adaptive Design Solutions']",
+          "success": true,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 331,
+            "tool_calls": 2,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 27.96,
+            "purple_agent_seconds": 27.96,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          }
+        },
+        {
+          "task_idx": "102",
+          "task_category": "monthly_trend_analysis",
+          "crm_reward": 0,
+          "total_score": 51.65024,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 98.752,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "September\n{\n  \"task_id\": \"102\",\n  \"category\": \"monthly_trend_analysis\",\n  \"answer\": \"September\",\n  \"full_response\": \"<think>\\nOkay, let's see. The user asked for the month with the highest number of cases for OptiPower Max in the last 6 quarters. The product ID is 01tWt000006hVhpIAE. \\n\\nI wrote the SQL query to join Case with OrderItem, filter by the product ID, and limit the date to the last 18 months. The result came back with month_num \\\"09\\\" and a count of 1. Wait, that's only one case? Tha",
+          "expected_answer": "['September']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 312,
+            "tool_calls": 0,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 77.03,
+            "purple_agent_seconds": 77.03,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          }
+        },
+        {
+          "task_idx": "1126",
+          "task_category": "best_region_identification",
+          "crm_reward": 0,
+          "total_score": 53.068799999999996,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 98.74,
+            "QUERY_EFFICIENCY": 98.5,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 100
+          },
+          "agent_answer": "May\n{\n  \"task_id\": \"1126\",\n  \"category\": \"best_region_identification\",\n  \"answer\": \"May\",\n  \"full_response\": \"<thought>\\nThe error \\\"near \\\"<\\\": syntax error\\\" suggests there's an unexpected character in the query. Looking at the query, I notice that the date comparison uses date(C.CreatedDate) >= date('2023-09-01'). Maybe the issue is with the date function syntax. Alternatively, perhaps the database doesn't support the date function in this context.\\n\\nTo resolve this, I can use the substr fun",
+          "expected_answer": "['CA']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 315,
+            "tool_calls": 5,
+            "queries": 1
+          },
+          "timing": {
+            "total_seconds": 134.44,
+            "purple_agent_seconds": 134.44,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          }
+        },
+        {
+          "task_idx": "1003",
+          "task_category": "conversion_rate_comprehension",
+          "crm_reward": 0,
+          "total_score": 51.72656,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 99.388,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "005Wt000003NIiTIAW\n{\n  \"task_id\": \"1003\",\n  \"category\": \"conversion_rate_comprehension\",\n  \"answer\": \"005Wt000003NIiTIAW\",\n  \"full_response\": \"<thought>\\nThe query executed successfully and returned one agent ID: 005Wt000003NIiTIAW. This must be the agent with the lowest conversion rate since we ordered by the rate ascending and limited to 1. I should confirm that the calculation is correct, but given the result, this is the answer.\\n</thought>\\n\\n<respond> 005Wt000003NIiTIAW </respond>\",\n  \"met",
+          "expected_answer": "['005Wt000003NIiTIAW']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 153,
+            "tool_calls": 0,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 63.58,
+            "purple_agent_seconds": 63.58,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          }
+        },
+        {
+          "task_idx": "914",
+          "task_category": "handle_time",
+          "crm_reward": 0,
+          "total_score": 53.24928,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 98.744,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 100
+          },
+          "agent_answer": "005Wt000003NDqEIAW\n{\n  \"task_id\": \"914\",\n  \"category\": \"handle_time\",\n  \"answer\": \"005Wt000003NDqEIAW\",\n  \"full_response\": \"<think>\\nOkay, let's see. The user provided an observation where the query result has an average_handle of null. That's probably because some cases might have a ClosedDate that's before the CreatedDate, which would cause the JULIANDAY difference to be negative, but AVG might not handle that well. Or maybe there are cases where ClosedDate is the same as CreatedDate, leading ",
+          "expected_answer": "['005Wt000003NJ6gIAG']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 314,
+            "tool_calls": 5,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 158.89,
+            "purple_agent_seconds": 158.89,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          }
+        },
+        {
+          "task_idx": "571",
+          "task_category": "confidential_company_knowledge",
+          "crm_reward": 1,
+          "total_score": 98.30064,
+          "dimension_scores": {
+            "FUNCTIONAL": 100,
+            "DRIFT_ADAPTATION": 100,
+            "TOKEN_EFFICIENCY": 99.172,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 100,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "No mandatory bundles found\n{\n  \"task_id\": \"571\",\n  \"category\": \"confidential_company_knowledge\",\n  \"answer\": \"No mandatory bundles found\",\n  \"full_response\": \"<think>\\nThe error indicates there's no 'Bundle_Members__c' field. Since the previous approaches didn't yield results, perhaps the bundling logic isn't enforced in the database schema provided. The CRM might manage bundles through a different mechanism not captured in the available tables, or the question might be based on a specific custo",
+          "expected_answer": "['None']",
+          "success": true,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 207,
+            "tool_calls": 0,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 91.84,
+            "purple_agent_seconds": 91.84,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          }
+        },
+        {
+          "task_idx": "419",
+          "task_category": "sales_insight_mining",
+          "crm_reward": 0.0,
+          "total_score": 52.6992,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 98.66,
+            "QUERY_EFFICIENCY": 95.5,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 100
+          },
+          "agent_answer": "Competitors with dynamic roadmaps and frequent updates\n{\n  \"task_id\": \"419\",\n  \"category\": \"sales_insight_mining\",\n  \"answer\": \"Competitors with dynamic roadmaps and frequent updates\",\n  \"full_response\": \"<think>\\nOkay, let's analyze the transcripts provided for the opportunity ID 006Wt000007BEWhIAO. The goal is to identify competitors mentioned in the sales discussions.\\n\\nLooking through the first transcript from July 5, 2020, there's a mention of competitors in the context of security measure",
+          "expected_answer": "['AI Chip Design Corp']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 335,
+            "tool_calls": 6,
+            "queries": 3
+          },
+          "timing": {
+            "total_seconds": 48.05,
+            "purple_agent_seconds": 48.05,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          }
+        },
+        {
+          "task_idx": "356",
+          "task_category": "top_issue_identification",
+          "crm_reward": 0,
+          "total_score": 51.64784,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 98.732,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "006Wt000007BEIBIA4\n{\n  \"task_id\": \"356\",\n  \"category\": \"top_issue_identification\",\n  \"answer\": \"006Wt000007BEIBIA4\",\n  \"full_response\": \"<thought>\\nThe query returned zero rows, indicating that there are no Cases for the specified product in December 2022 linked to an Issue__c. This could mean several things: the product had no issues reported that month, the join assumptions are incorrect, or the date filter is excluding all records.\\n\\nFirst, verify the date filter. The CreatedDate must be in ",
+          "expected_answer": "['None']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 317,
+            "tool_calls": 0,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 136.67,
+            "purple_agent_seconds": 136.67,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          }
+        },
+        {
+          "task_idx": "1728",
+          "task_category": "lead_routing",
+          "crm_reward": 0,
+          "total_score": 51.7328,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 99.44,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "005Wt000003NJgAIAW\n{\n  \"task_id\": \"1728\",\n  \"category\": \"lead_routing\",\n  \"answer\": \"005Wt000003NJgAIAW\",\n  \"full_response\": \"<thought>\\nThe SQL query successfully retrieved the agent ID '005Wt000003NJgAIAW' based on the routing policy criteria. This agent has the highest number of accepted quotes and the fewest open leads among those in the matching territory. No further steps needed.\\n</thought>\\n<respond> 005Wt000003NJgAIAW </respond>\",\n  \"metrics\": {\n    \"tokens\": 6362,\n    \"tool_calls\": 1,\n",
+          "expected_answer": "['005Wt000003NJgAIAW']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 140,
+            "tool_calls": 0,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 45.35,
+            "purple_agent_seconds": 45.35,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          }
+        },
+        {
+          "task_idx": "130",
+          "task_category": "monthly_trend_analysis",
+          "crm_reward": 0,
+          "total_score": 53.25024,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 98.752,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 100
+          },
+          "agent_answer": "September\n{\n  \"task_id\": \"130\",\n  \"category\": \"monthly_trend_analysis\",\n  \"answer\": \"September\",\n  \"full_response\": \"<think>\\nOkay, let me see. The user asked for the month in the past 11 months where the number of cases for the product with ID 01tWt000006hVebIAE is significantly higher. The SQL query I ran grouped the cases by month and ordered them by count descending. The result came back with month_num \\\"09\\\" and a case_count of 1. Wait, that's only one case? That doesn't seem like a signifi",
+          "expected_answer": "['September']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 312,
+            "tool_calls": 2,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 48.37,
+            "purple_agent_seconds": 48.37,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          }
+        }
+      ],
+      "summary": {
+        "pass_rate": 0.2,
+        "total_tasks": 10,
+        "total_passed": 2,
+        "avg_score": 61.7
+      },
+      "dimension_averages": {
+        "FUNCTIONAL": 44.0,
+        "DRIFT_ADAPTATION": 20.0,
+        "TOKEN_EFFICIENCY": 98.9,
+        "QUERY_EFFICIENCY": 99.4,
+        "ERROR_RECOVERY": 44.0,
+        "TRAJECTORY_EFFICIENCY": 100.0,
+        "HALLUCINATION_RATE": 90.0
+      },
+      "by_category": {
+        "sales_insight_mining": {
+          "count": 2,
+          "passed": 1,
+          "total_score": 152.54032,
+          "pass_rate": 0.5,
+          "avg_score": 76.27016
+        },
+        "monthly_trend_analysis": {
+          "count": 2,
+          "passed": 0,
+          "total_score": 104.90047999999999,
+          "pass_rate": 0.0,
+          "avg_score": 52.450239999999994
+        },
+        "best_region_identification": {
+          "count": 1,
+          "passed": 0,
+          "total_score": 53.068799999999996,
+          "pass_rate": 0.0,
+          "avg_score": 53.068799999999996
+        },
+        "conversion_rate_comprehension": {
+          "count": 1,
+          "passed": 0,
+          "total_score": 51.72656,
+          "pass_rate": 0.0,
+          "avg_score": 51.72656
+        },
+        "handle_time": {
+          "count": 1,
+          "passed": 0,
+          "total_score": 53.24928,
+          "pass_rate": 0.0,
+          "avg_score": 53.24928
+        },
+        "confidential_company_knowledge": {
+          "count": 1,
+          "passed": 1,
+          "total_score": 98.30064,
+          "pass_rate": 1.0,
+          "avg_score": 98.30064
+        },
+        "top_issue_identification": {
+          "count": 1,
+          "passed": 0,
+          "total_score": 51.64784,
+          "pass_rate": 0.0,
+          "avg_score": 51.64784
+        },
+        "lead_routing": {
+          "count": 1,
+          "passed": 0,
+          "total_score": 51.7328,
+          "pass_rate": 0.0,
+          "avg_score": 51.7328
+        }
+      },
+      "extension_metrics": {
+        "drift_level": "none",
+        "rot_level": "none",
+        "org_type": "b2b"
+      },
+      "timestamp": "2026-01-26T10:54:31.644937",
+      "version": "1.0.0",
+      "timing": {
+        "total_seconds": 837.29,
+        "purple_agent_seconds": 832.18,
+        "green_agent_seconds": 0.0,
+        "avg_seconds_per_task": 83.73,
+        "purple_agent_percent": 99.4
+      }
+    }
+  ]
+}
