@@ -1,0 +1,380 @@
+{
+  "participants": {
+    "agent": "019ba27e-3b82-7d43-8822-51357ccd4861"
+  },
+  "results": [
+    {
+      "participants": {
+        "agent": "http://agent:9009/"
+      },
+      "results": [
+        {
+          "task_idx": "456",
+          "task_category": "sales_insight_mining",
+          "crm_reward": 1.0,
+          "total_score": 99.84064,
+          "dimension_scores": {
+            "FUNCTIONAL": 100.0,
+            "DRIFT_ADAPTATION": 100,
+            "TOKEN_EFFICIENCY": 98.672,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 100,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 100
+          },
+          "agent_answer": "Quantum Circuits Inc., Adaptive Design Solutions\n{\n  \"task_id\": \"456\",\n  \"category\": \"sales_insight_mining\",\n  \"answer\": \"Quantum Circuits Inc., Adaptive Design Solutions\",\n  \"full_response\": \"<think>\\nAlright, let me go through this again carefully. The user wants to know which competitors we're at a disadvantage against based on the provided transcripts for the opportunity ID 006Wt000007B8PeIAK.\\n\\nLooking at the first transcript from February 8th, the sales rep mentions Quantum Circuits Inc. ",
+          "expected_answer": "['Adaptive Design Solutions']",
+          "success": true,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 332,
+            "tool_calls": 3,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 112.25,
+            "purple_agent_seconds": 112.25,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          }
+        },
+        {
+          "task_idx": "102",
+          "task_category": "monthly_trend_analysis",
+          "crm_reward": 0,
+          "total_score": 53.25024,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 98.752,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 100
+          },
+          "agent_answer": "September\n{\n  \"task_id\": \"102\",\n  \"category\": \"monthly_trend_analysis\",\n  \"answer\": \"September\",\n  \"full_response\": \"<think>\\nOkay, let me see. The user asked for the month with the highest number of cases for OptiPower Max in the last 6 quarters. The SQL query I ran filtered cases from 2023-01-01 onwards, joined with OrderItem to get the product, and grouped by month. The result came back with m as \\\"09\\\" and cnt as 1. Wait, that's only one case? That seems low. Maybe I made a mistake in the da",
+          "expected_answer": "['September']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 312,
+            "tool_calls": 3,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 41.84,
+            "purple_agent_seconds": 41.84,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          }
+        },
+        {
+          "task_idx": "1126",
+          "task_category": "best_region_identification",
+          "crm_reward": 0,
+          "total_score": 53.07792,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 98.816,
+            "QUERY_EFFICIENCY": 98.5,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 100
+          },
+          "agent_answer": "May\n{\n  \"task_id\": \"1126\",\n  \"category\": \"best_region_identification\",\n  \"answer\": \"May\",\n  \"full_response\": \"<thought>\\nThe error suggests the state field might be in a different table or named differently. Let me check the Account table's columns again using DESCRIBE to find the correct state field name.\\n</thought>\\n\\n<execute>\\n<describe> Account </describe>\\n</execute>\\n\\n<thought>\\nAssuming the DESCRIBE reveals the correct column is \\\"BillingState\\\" but perhaps in a different case or with ",
+          "expected_answer": "['CA']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 296,
+            "tool_calls": 3,
+            "queries": 1
+          },
+          "timing": {
+            "total_seconds": 103.58,
+            "purple_agent_seconds": 103.58,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          }
+        },
+        {
+          "task_idx": "1003",
+          "task_category": "conversion_rate_comprehension",
+          "crm_reward": 0,
+          "total_score": 51.73952,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 99.496,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "005Wt000003NJRdIAO\n{\n  \"task_id\": \"1003\",\n  \"category\": \"conversion_rate_comprehension\",\n  \"answer\": \"005Wt000003NJRdIAO\",\n  \"full_response\": \"<thought>\\nThe query executed successfully and returned one agent ID, which is the agent with the lowest conversion rate. The final answer should be just the ID provided in the result.\\n</thought>\\n\\n<respond> 005Wt000003NJRdIAO </respond>\",\n  \"metrics\": {\n    \"tokens\": 11378,\n    \"tool_calls\": 2,\n    \"queries\": 2,\n    \"turns\": 3,\n    \"failed_queries\": 1\n",
+          "expected_answer": "['005Wt000003NIiTIAW']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 126,
+            "tool_calls": 0,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 69.97,
+            "purple_agent_seconds": 69.97,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          }
+        },
+        {
+          "task_idx": "914",
+          "task_category": "handle_time",
+          "crm_reward": 0,
+          "total_score": 53.25552,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 98.796,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 100
+          },
+          "agent_answer": "005Wt000003NEGhIAO\n{\n  \"task_id\": \"914\",\n  \"category\": \"handle_time\",\n  \"answer\": \"005Wt000003NEGhIAO\",\n  \"full_response\": \"<thought>\\nThe average handle time is 0.0, which might indicate that the calculation is incorrect due to date format issues. The ClosedDate and CreatedDate are in ISO format with time zones, so extracting just the date part (substr to 10 characters) might be necessary for accurate JULIANDAY calculations.\\n\\nThe query now uses substr to get the date part, which should resolv",
+          "expected_answer": "['005Wt000003NJ6gIAG']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 301,
+            "tool_calls": 1,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 144.47,
+            "purple_agent_seconds": 144.47,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          }
+        },
+        {
+          "task_idx": "571",
+          "task_category": "confidential_company_knowledge",
+          "crm_reward": 1,
+          "total_score": 98.32704,
+          "dimension_scores": {
+            "FUNCTIONAL": 100,
+            "DRIFT_ADAPTATION": 100,
+            "TOKEN_EFFICIENCY": 99.392,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 100,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "SecureFlow Suite, AI Cirku-Tech, CloudLink Designer\n{\n  \"task_id\": \"571\",\n  \"category\": \"confidential_company_knowledge\",\n  \"answer\": \"SecureFlow Suite, AI Cirku-Tech, CloudLink Designer\",\n  \"full_response\": \"<think> The query results show that the top bundled products with PulseSim Pro are SecureFlow Suite, AI Cirku-Tech, and CloudLink Designer. These must be the required bundles based on the CRM data.</think>\\n<respond> SecureFlow Suite, AI Cirku-Tech, CloudLink Designer </respond>\",\n  \"metric",
+          "expected_answer": "['None']",
+          "success": true,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 152,
+            "tool_calls": 0,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 66.95,
+            "purple_agent_seconds": 66.95,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          }
+        },
+        {
+          "task_idx": "419",
+          "task_category": "sales_insight_mining",
+          "crm_reward": 0,
+          "total_score": 0,
+          "dimension_scores": {},
+          "error": "Timeout Error: Client Request timed out",
+          "success": false
+        },
+        {
+          "task_idx": "356",
+          "task_category": "top_issue_identification",
+          "crm_reward": 0,
+          "total_score": 53.244,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 98.7,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 100
+          },
+          "agent_answer": "No data available for December 2022.\n{\n  \"task_id\": \"356\",\n  \"category\": \"top_issue_identification\",\n  \"answer\": \"No data available for December 2022.\",\n  \"full_response\": \"<think>\\nOkay, the query now returns zero rows. That means there are no Cases for that product in December 2022, or the filtering is incorrect. Let me check the date condition again. The user's current date is 2022-03-02, so December 2022 is in the future? Wait, no, December 2022 is before March 2023, but if today is 2022-03-",
+          "expected_answer": "['None']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 325,
+            "tool_calls": 3,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 210.7,
+            "purple_agent_seconds": 210.7,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          }
+        },
+        {
+          "task_idx": "1728",
+          "task_category": "lead_routing",
+          "crm_reward": 0,
+          "total_score": 51.73664,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 99.472,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "005Wt000003NJgAIAW\n{\n  \"task_id\": \"1728\",\n  \"category\": \"lead_routing\",\n  \"answer\": \"005Wt000003NJgAIAW\",\n  \"full_response\": \"<thought>\\nThe query returned one agent with UserId 005Wt000003NJgAIAW, who has 7 accepted quotes and 6 open leads. Since there's only one result, this agent is the top choice based on the criteria. No tie-breakers needed here.\\n</thought>\\n\\n<respond> 005Wt000003NJgAIAW </respond>\",\n  \"metrics\": {\n    \"tokens\": 5427,\n    \"tool_calls\": 1,\n    \"queries\": 1,\n    \"turns\": 2,",
+          "expected_answer": "['005Wt000003NJgAIAW']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 132,
+            "tool_calls": 0,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 33.86,
+            "purple_agent_seconds": 33.86,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          }
+        },
+        {
+          "task_idx": "130",
+          "task_category": "monthly_trend_analysis",
+          "crm_reward": 0,
+          "total_score": 53.25024,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 98.752,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 100
+          },
+          "agent_answer": "September\n{\n  \"task_id\": \"130\",\n  \"category\": \"monthly_trend_analysis\",\n  \"answer\": \"September\",\n  \"full_response\": \"<think>\\nOkay, let me see. The user asked for the month in the past 11 months where the number of cases for the product significantly exceeds others. The product ID is 01tWt000006hVebIAE. The observation shows the result from the query: month_num is \\\"09\\\", year 2022, with a case_count of 1. Wait, but that's only one case. That doesn't seem like it's significantly higher than othe",
+          "expected_answer": "['September']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 312,
+            "tool_calls": 5,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 55.67,
+            "purple_agent_seconds": 55.67,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          }
+        }
+      ],
+      "summary": {
+        "pass_rate": 0.2,
+        "total_tasks": 10,
+        "total_passed": 2,
+        "avg_score": 56.8
+      },
+      "dimension_averages": {
+        "FUNCTIONAL": 45.6,
+        "DRIFT_ADAPTATION": 22.2,
+        "TOKEN_EFFICIENCY": 99.0,
+        "QUERY_EFFICIENCY": 99.8,
+        "ERROR_RECOVERY": 45.6,
+        "TRAJECTORY_EFFICIENCY": 100.0,
+        "HALLUCINATION_RATE": 93.3
+      },
+      "by_category": {
+        "sales_insight_mining": {
+          "count": 2,
+          "passed": 1,
+          "total_score": 99.84064,
+          "pass_rate": 0.5,
+          "avg_score": 49.92032
+        },
+        "monthly_trend_analysis": {
+          "count": 2,
+          "passed": 0,
+          "total_score": 106.50048,
+          "pass_rate": 0.0,
+          "avg_score": 53.25024
+        },
+        "best_region_identification": {
+          "count": 1,
+          "passed": 0,
+          "total_score": 53.07792,
+          "pass_rate": 0.0,
+          "avg_score": 53.07792
+        },
+        "conversion_rate_comprehension": {
+          "count": 1,
+          "passed": 0,
+          "total_score": 51.73952,
+          "pass_rate": 0.0,
+          "avg_score": 51.73952
+        },
+        "handle_time": {
+          "count": 1,
+          "passed": 0,
+          "total_score": 53.25552,
+          "pass_rate": 0.0,
+          "avg_score": 53.25552
+        },
+        "confidential_company_knowledge": {
+          "count": 1,
+          "passed": 1,
+          "total_score": 98.32704,
+          "pass_rate": 1.0,
+          "avg_score": 98.32704
+        },
+        "top_issue_identification": {
+          "count": 1,
+          "passed": 0,
+          "total_score": 53.244,
+          "pass_rate": 0.0,
+          "avg_score": 53.244
+        },
+        "lead_routing": {
+          "count": 1,
+          "passed": 0,
+          "total_score": 51.73664,
+          "pass_rate": 0.0,
+          "avg_score": 51.73664
+        }
+      },
+      "extension_metrics": {
+        "drift_level": "none",
+        "rot_level": "none",
+        "org_type": "b2b"
+      },
+      "timestamp": "2026-01-29T11:32:17.023820",
+      "version": "1.0.0",
+      "timing": {
+        "total_seconds": 1145.32,
+        "purple_agent_seconds": 839.29,
+        "green_agent_seconds": 0.0,
+        "avg_seconds_per_task": 114.53,
+        "purple_agent_percent": 73.3
+      }
+    }
+  ]
+}
