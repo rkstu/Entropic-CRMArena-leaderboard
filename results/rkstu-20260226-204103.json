@@ -1,0 +1,156 @@
+{
+  "participants": {
+    "agent": "019ba27e-3b82-7d43-8822-51357ccd4861"
+  },
+  "results": [
+    {
+      "participants": {
+        "agent": "http://agent:9009/"
+      },
+      "results": [
+        {
+          "task_idx": "456",
+          "task_category": "sales_insight_mining",
+          "crm_reward": 0.08333333333333333,
+          "total_score": 52.14768,
+          "dimension_scores": {
+            "FUNCTIONAL": 8.333333333333332,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 98.564,
+            "QUERY_EFFICIENCY": 98.5,
+            "ERROR_RECOVERY": 100,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 100
+          },
+          "agent_answer": "Business problems and pain points, Pricing and competitive analysis, Implementation process and support\n{\n  \"task_id\": \"456\",\n  \"category\": \"sales_insight_mining\",\n  \"answer\": \"Business problems and pain points, Pricing and competitive analysis, Implementation process and support\",\n  \"full_response\": \"<think>\\nOkay, let's tackle this. The user wants to know the subtopics within sales conversations that show negative sentiment when discussing solutions, specifically for Opportunity ID 006Ws00000A",
+          "expected_answer": "[\"Transparent pricing advantages, Factory-trained technicians' expertise vs competitors, Financing options comparison, Transparent pricing advantages\"]",
+          "success": true,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 359,
+            "tool_calls": 3,
+            "queries": 1
+          },
+          "timing": {
+            "total_seconds": 31.4,
+            "purple_agent_seconds": 31.4,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          }
+        },
+        {
+          "task_idx": "102",
+          "task_category": "monthly_trend_analysis",
+          "crm_reward": 0,
+          "total_score": 53.252159999999996,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 98.768,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 100
+          },
+          "agent_answer": "March\n{\n  \"task_id\": \"102\",\n  \"category\": \"monthly_trend_analysis\",\n  \"answer\": \"March\",\n  \"full_response\": \"<thought> The query returned month 03 with 2 cases, but the user asked for a month where cases \\\"significantly exceed\\\" others. Since the result only shows one row, maybe the data is limited or the query needs adjustment. Wait, the example in the instructions used LIMIT 1, but maybe the actual data has more months. Let me check the original question again. The product ID is 01tWs000006f7Z",
+          "expected_answer": "['March']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 308,
+            "tool_calls": 2,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 46.65,
+            "purple_agent_seconds": 46.65,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          }
+        },
+        {
+          "task_idx": "1126",
+          "task_category": "best_region_identification",
+          "crm_reward": 0,
+          "total_score": 53.06832,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 98.736,
+            "QUERY_EFFICIENCY": 98.5,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 100
+          },
+          "agent_answer": "May\n{\n  \"task_id\": \"1126\",\n  \"category\": \"best_region_identification\",\n  \"answer\": \"May\",\n  \"full_response\": \"<thought>\\nThe error indicates that the Account table doesn't have a 'State__c' column. This is getting frustrating. Let me recap:\\n\\n- Tried Account.BillingState, ShippingState, State, State__c\\u2014all result in \\\"no such column\\\".\\n- Tried Contact.MailingState, but that also had an error.\\n- The user's examples didn't cover this, so maybe the state is stored elsewhere.\\n\\nAlternative ",
+          "expected_answer": "['AZ']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 316,
+            "tool_calls": 5,
+            "queries": 1
+          },
+          "timing": {
+            "total_seconds": 163.58,
+            "purple_agent_seconds": 163.58,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          }
+        }
+      ],
+      "summary": {
+        "pass_rate": 0.333,
+        "total_tasks": 3,
+        "total_passed": 1,
+        "avg_score": 52.8
+      },
+      "dimension_averages": {
+        "FUNCTIONAL": 22.8,
+        "DRIFT_ADAPTATION": 0.0,
+        "TOKEN_EFFICIENCY": 98.7,
+        "QUERY_EFFICIENCY": 99.0,
+        "ERROR_RECOVERY": 53.3,
+        "TRAJECTORY_EFFICIENCY": 100.0,
+        "HALLUCINATION_RATE": 100.0
+      },
+      "by_category": {
+        "sales_insight_mining": {
+          "count": 1,
+          "passed": 1,
+          "total_score": 52.14768,
+          "pass_rate": 1.0,
+          "avg_score": 52.14768
+        },
+        "monthly_trend_analysis": {
+          "count": 1,
+          "passed": 0,
+          "total_score": 53.252159999999996,
+          "pass_rate": 0.0,
+          "avg_score": 53.252159999999996
+        },
+        "best_region_identification": {
+          "count": 1,
+          "passed": 0,
+          "total_score": 53.06832,
+          "pass_rate": 0.0,
+          "avg_score": 53.06832
+        }
+      },
+      "extension_metrics": {
+        "drift_level": "none",
+        "rot_level": "none",
+        "org_type": "b2c"
+      },
+      "timestamp": "2026-02-26T20:41:02.287173",
+      "version": "1.0.0",
+      "timing": {
+        "total_seconds": 245.78,
+        "purple_agent_seconds": 241.63,
+        "green_agent_seconds": 0.0,
+        "avg_seconds_per_task": 81.93,
+        "purple_agent_percent": 98.3
+      }
+    }
+  ]
+}
