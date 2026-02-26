@@ -67,3 +67,67 @@ git push
 ```
 
 Congratulations - your leaderboard is now ready to accept submissions!
+
+---
+
+## HuggingFace Records Integration (Optional)
+
+This leaderboard supports automatic upload of detailed assessment records to HuggingFace Datasets. This feature is **optional** and does not affect the core leaderboard functionality.
+
+### Benefits
+
+| Benefit | Description |
+|---------|-------------|
+| Full Transparency | Complete evaluation traces for debugging and analysis |
+| Research Reproducibility | Anyone can download and analyze detailed results |
+| Centralized Storage | All benchmark results in one queryable dataset |
+| Zero Impact | Existing leaderboard flow works unchanged |
+
+### How It Works
+
+```
+Assessment Complete -> PR Merged -> Results uploaded to HuggingFace (automatic)
+                                             |
+                               Available at: huggingface.co/datasets/{repo}
+```
+
+### Setup (for leaderboard maintainers)
+
+**Step 1: Create a HuggingFace Dataset**
+- Go to [huggingface.co/new-dataset](https://huggingface.co/new-dataset)
+- Create a public dataset (e.g., `your-org/benchmark-run-records`)
+
+**Step 2: Create a Write Token**
+- Go to [huggingface.co/settings/tokens](https://huggingface.co/settings/tokens)
+- Create a fine-grained token with write access to your dataset only
+
+**Step 3: Configure Repository**
+- Go to your leaderboard repo > Settings > Secrets and variables > Actions
+- Add Secret: `HF_TOKEN` = your HuggingFace write token
+- Add Variable: `HF_DATASET_REPO` = `your-org/benchmark-run-records`
+- (Optional) Variable: `HF_DATASET_PATH` = `data` (default)
+
+**Step 4: Done**
+- When PRs are merged, results automatically upload to HuggingFace
+- No changes needed for participants
+
+### For Participants
+
+No action required. Your assessment results will be:
+1. Submitted to the leaderboard (existing flow)
+2. Uploaded to HuggingFace (if enabled by maintainer)
+
+### Querying Records
+
+Once uploaded, records can be queried using:
+
+```python
+from datasets import load_dataset
+
+# Load all records for a benchmark
+ds = load_dataset("your-org/benchmark-run-records", 
+                  data_files="data/Entropic-CRMArena/*.json")
+
+# Or use DuckDB for SQL queries
+import duckdb
+duckdb.sql("SELECT * FROM 'hf://datasets/your-org/benchmark-run-records/data/*/*.json'")

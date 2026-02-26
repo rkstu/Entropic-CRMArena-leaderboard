@@ -1,0 +1,173 @@
+# upload-records-to-hf.yml
+#
+# Uploads assessment results to a HuggingFace dataset after PRs are merged.
+#
+# Benefits:
+#   - Full evaluation traces for debugging and analysis
+#   - Research reproducibility
+#   - Centralized queryable storage for benchmark results
+#
+# Setup (leaderboard maintainers only):
+#   1. Create a HuggingFace dataset (e.g., your-org/benchmark-run-records)
+#   2. Create a fine-grained HF token with write access to that dataset
+#   3. Add secret HF_TOKEN in repo Settings > Secrets
+#   4. Add variable HF_DATASET_REPO in repo Settings > Variables
+#
+# Note: Participants do not need any setup. The upload runs in the upstream
+# repo after PRs are merged, using the maintainer's secrets.
+#
+# This feature is opt-in and does not affect existing leaderboard functionality.
+
+name: Upload Records to HuggingFace
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'results/*.json'
+
+jobs:
+  upload-records:
+    runs-on: ubuntu-latest
+    if: ${{ vars.HF_DATASET_REPO != '' }}
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      
+      - name: Find new result files
+        id: find_new
+        run: |
+          NEW_FILES=$(git diff --name-only HEAD~1 HEAD -- 'results/*.json' 2>/dev/null || echo "")
+          if [ -z "$NEW_FILES" ]; then
+            echo "No new result files found"
+            echo "has_files=false" >> $GITHUB_OUTPUT
+          else
+            echo "Found new files:"
+            echo "$NEW_FILES"
+            FILES_LIST=$(echo "$NEW_FILES" | tr '\n' ' ')
+            echo "files=$FILES_LIST" >> $GITHUB_OUTPUT
+            echo "has_files=true" >> $GITHUB_OUTPUT
+          fi
+      
+      - name: Set up Python
+        if: steps.find_new.outputs.has_files == 'true'
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Install dependencies
+        if: steps.find_new.outputs.has_files == 'true'
+        run: pip install huggingface_hub
+      
+      - name: Upload to HuggingFace
+        if: steps.find_new.outputs.has_files == 'true'
+        continue-on-error: true
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_DATASET_REPO: ${{ vars.HF_DATASET_REPO }}
+          HF_DATASET_PATH: ${{ vars.HF_DATASET_PATH || 'data' }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+        run: |
+          python << 'PYTHON_SCRIPT'
+          import os
+          import sys
+          from huggingface_hub import HfApi
+
+          hf_token = os.environ.get("HF_TOKEN")
+          dataset_repo = os.environ.get("HF_DATASET_REPO")
+          dataset_path = os.environ.get("HF_DATASET_PATH", "data")
+          github_repo = os.environ.get("GITHUB_REPOSITORY", "unknown/unknown")
+
+          if not hf_token:
+              print("WARNING: HF_TOKEN secret not set, skipping upload")
+              print("  To enable: Add HF_TOKEN secret in repo Settings > Secrets")
+              sys.exit(0)
+
+          if not dataset_repo:
+              print("WARNING: HF_DATASET_REPO variable not set, skipping upload")
+              sys.exit(0)
+
+          files_str = os.environ.get("NEW_FILES", "")
+          if not files_str:
+              import subprocess
+              result = subprocess.run(
+                  ["git", "diff", "--name-only", "HEAD~1", "HEAD", "--", "results/*.json"],
+                  capture_output=True, text=True
+              )
+              files_str = result.stdout
+
+          files = [f.strip() for f in files_str.split() if f.strip() and f.endswith('.json')]
+
+          if not files:
+              print("No JSON files to upload")
+              sys.exit(0)
+
+          api = HfApi(token=hf_token)
+          benchmark_name = github_repo.split("/")[-1].replace("-leaderboard", "")
+
+          print(f"Uploading to: {dataset_repo}")
+          print(f"Path: {dataset_path}/{benchmark_name}/")
+          print(f"Files: {len(files)}")
+          print()
+
+          uploaded = []
+          failed = []
+
+          for filepath in files:
+              if not os.path.exists(filepath):
+                  print(f"WARNING: File not found: {filepath}")
+                  failed.append(filepath)
+                  continue
+
+              filename = os.path.basename(filepath)
+              hf_path = f"{dataset_path}/{benchmark_name}/{filename}"
+
+              try:
+                  print(f"Uploading: {filename}")
+                  api.upload_file(
+                      path_or_fileobj=filepath,
+                      path_in_repo=hf_path,
+                      repo_id=dataset_repo,
+                      repo_type="dataset",
+                  )
+                  uploaded.append(filename)
+                  print(f"  Success")
+              except Exception as e:
+                  print(f"  Failed: {e}")
+                  failed.append(filepath)
+
+          print()
+          print("=" * 50)
+          print("Upload Summary")
+          print(f"  Uploaded: {len(uploaded)}")
+          print(f"  Failed: {len(failed)}")
+          if uploaded:
+              print(f"  URL: https://huggingface.co/datasets/{dataset_repo}/tree/main/{dataset_path}/{benchmark_name}")
+          print("=" * 50)
+
+          if failed and not uploaded:
+              print("\nWARNING: All uploads failed, but continuing (leaderboard unaffected)")
+
+          PYTHON_SCRIPT
+        env:
+          NEW_FILES: ${{ steps.find_new.outputs.files }}
+      
+      - name: Summary
+        if: steps.find_new.outputs.has_files == 'true'
+        continue-on-error: true
+        env:
+          HF_DATASET_REPO: ${{ vars.HF_DATASET_REPO }}
+        run: |
+          BENCHMARK_NAME=$(echo "${{ github.repository }}" | sed 's/.*\///' | sed 's/-leaderboard//')
+          echo "### HuggingFace Records Upload" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Benchmark:** ${BENCHMARK_NAME}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Files:** ${{ steps.find_new.outputs.files }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ -n "${HF_DATASET_REPO}" ]; then
+            echo "**Dataset:** [${HF_DATASET_REPO}](https://huggingface.co/datasets/${HF_DATASET_REPO}/tree/main/data/${BENCHMARK_NAME})" >> $GITHUB_STEP_SUMMARY
+          fi
