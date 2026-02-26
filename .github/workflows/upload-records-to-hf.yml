@@ -70,6 +70,7 @@ jobs:
           HF_DATASET_REPO: ${{ vars.HF_DATASET_REPO }}
           HF_DATASET_PATH: ${{ vars.HF_DATASET_PATH || 'data' }}
           GITHUB_REPOSITORY: ${{ github.repository }}
+          NEW_FILES: ${{ steps.find_new.outputs.files }}
         run: |
           python << 'PYTHON_SCRIPT'
           import os
@@ -152,8 +153,6 @@ jobs:
               print("\nWARNING: All uploads failed, but continuing (leaderboard unaffected)")
 
           PYTHON_SCRIPT
-        env:
-          NEW_FILES: ${{ steps.find_new.outputs.files }}
       
       - name: Summary
         if: steps.find_new.outputs.has_files == 'true'
