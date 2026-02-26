@@ -8,9 +8,9 @@ name = "agent"
 env = { NEBIUS_API_KEY = "${NEBIUS_API_KEY}" }
 
 [config]
-task_limit = 10
+task_limit = 3
 drift_level = "none"
 rot_level = "none"
-max_steps = 15
+max_steps = 7
 timeout = 300
-org_type = "b2b"
+org_type = "b2c"
