@@ -1,0 +1,209 @@
+{
+  "participants": {
+    "agent": "019ba27e-3b82-7d43-8822-51357ccd4861"
+  },
+  "results": [
+    {
+      "participants": {
+        "agent": "http://agent:9009/"
+      },
+      "results": [
+        {
+          "task_idx": "456",
+          "task_category": "sales_insight_mining",
+          "crm_reward": 1.0,
+          "total_score": 99.84688,
+          "dimension_scores": {
+            "FUNCTIONAL": 100.0,
+            "DRIFT_ADAPTATION": 100,
+            "TOKEN_EFFICIENCY": 98.724,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 100,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 100
+          },
+          "agent_answer": "Adaptive Design Solutions\n{\n  \"task_id\": \"456\",\n  \"category\": \"sales_insight_mining\",\n  \"answer\": \"Adaptive Design Solutions\",\n  \"full_response\": \"<think>\\nOkay, let's analyze the provided transcripts to identify competitors where we're at a disadvantage. The user mentioned the opportunity ID is 006Wt000007B8PeIAK, and the task is to find competitors mentioned in sales discussions where we're at a disadvantage.\\n\\nLooking at the first transcript from February 8th, there's a mention of \\\"Quantum ",
+          "expected_answer": "['Adaptive Design Solutions']",
+          "success": true,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 319,
+            "tool_calls": 6,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 35.02,
+            "purple_agent_seconds": 35.02,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          }
+        },
+        {
+          "task_idx": "102",
+          "task_category": "monthly_trend_analysis",
+          "crm_reward": 0,
+          "total_score": 53.27664,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 98.972,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 100
+          },
+          "agent_answer": "September\n{\n  \"task_id\": \"102\",\n  \"category\": \"monthly_trend_analysis\",\n  \"answer\": \"September\",\n  \"full_response\": \"<think>\\nOkay, let me process this. The user provided the observation result from the SQL query. The result shows that the month_num is \\\"09\\\" with a case_count of 1. \\n\\nFirst, I need to convert the month number \\\"09\\\" to the corresponding month name. \\\"09\\\" represents September. \\n\\nThe question asks for the month name where the number of cases was significantly higher compared ",
+          "expected_answer": "['September']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 257,
+            "tool_calls": 2,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 40.26,
+            "purple_agent_seconds": 40.26,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          }
+        },
+        {
+          "task_idx": "1126",
+          "task_category": "best_region_identification",
+          "crm_reward": 0,
+          "total_score": 0,
+          "dimension_scores": {},
+          "error": "Timeout Error: Client Request timed out",
+          "success": false
+        },
+        {
+          "task_idx": "1003",
+          "task_category": "conversion_rate_comprehension",
+          "crm_reward": 0,
+          "total_score": 51.73376,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 99.448,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "005Wt000003NH86IAG\n{\n  \"task_id\": \"1003\",\n  \"category\": \"conversion_rate_comprehension\",\n  \"answer\": \"005Wt000003NH86IAG\",\n  \"full_response\": \"<thought>\\nThe query executed successfully and returned one agent ID: 005Wt000003NH86IAG. This must be the agent with the lowest conversion rate as per the calculation. Since the user asked for only the ID, this is the final answer.\\n</thought>\\n\\n<respond> 005Wt000003NH86IAG </respond>\",\n  \"metrics\": {\n    \"tokens\": 11427,\n    \"tool_calls\": 2,\n    \"queri",
+          "expected_answer": "['005Wt000003NIiTIAW']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 138,
+            "tool_calls": 0,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 89.74,
+            "purple_agent_seconds": 89.74,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          }
+        },
+        {
+          "task_idx": "914",
+          "task_category": "handle_time",
+          "crm_reward": 0,
+          "total_score": 52.88928,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 98.744,
+            "QUERY_EFFICIENCY": 97.0,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 100
+          },
+          "agent_answer": "005Wt000003NJ6gIAG\n{\n  \"task_id\": \"914\",\n  \"category\": \"handle_time\",\n  \"answer\": \"005Wt000003NJ6gIAG\",\n  \"full_response\": \"<thought>\\nThe persistent error suggests the CaseHistory__c table uses a different foreign key. Let me check the schema again. If the CaseHistory__c is related to Case via a different field, like ParentId, the query should use CH.ParentId = C.Id. Adjusting accordingly.\\n</thought>\\n\\n<execute>\\nSELECT \\n    C.OwnerId\\nFROM \\n    \\\"Case\\\" C\\nWHERE \\n    C.ClosedDate IS NOT N",
+          "expected_answer": "['005Wt000003NJ6gIAG']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 314,
+            "tool_calls": 6,
+            "queries": 2
+          },
+          "timing": {
+            "total_seconds": 107.78,
+            "purple_agent_seconds": 107.78,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          }
+        }
+      ],
+      "summary": {
+        "pass_rate": 0.2,
+        "total_tasks": 5,
+        "total_passed": 1,
+        "avg_score": 51.5
+      },
+      "dimension_averages": {
+        "FUNCTIONAL": 47.5,
+        "DRIFT_ADAPTATION": 25.0,
+        "TOKEN_EFFICIENCY": 99.0,
+        "QUERY_EFFICIENCY": 99.2,
+        "ERROR_RECOVERY": 47.5,
+        "TRAJECTORY_EFFICIENCY": 100.0,
+        "HALLUCINATION_RATE": 95.0
+      },
+      "by_category": {
+        "sales_insight_mining": {
+          "count": 1,
+          "passed": 1,
+          "total_score": 99.84688,
+          "pass_rate": 1.0,
+          "avg_score": 99.84688
+        },
+        "monthly_trend_analysis": {
+          "count": 1,
+          "passed": 0,
+          "total_score": 53.27664,
+          "pass_rate": 0.0,
+          "avg_score": 53.27664
+        },
+        "best_region_identification": {
+          "count": 1,
+          "passed": 0,
+          "total_score": 0,
+          "pass_rate": 0.0,
+          "avg_score": 0.0
+        },
+        "conversion_rate_comprehension": {
+          "count": 1,
+          "passed": 0,
+          "total_score": 51.73376,
+          "pass_rate": 0.0,
+          "avg_score": 51.73376
+        },
+        "handle_time": {
+          "count": 1,
+          "passed": 0,
+          "total_score": 52.88928,
+          "pass_rate": 0.0,
+          "avg_score": 52.88928
+        }
+      },
+      "extension_metrics": {
+        "drift_level": "none",
+        "rot_level": "none",
+        "org_type": "b2b"
+      },
+      "timestamp": "2026-02-26T19:57:10.965241",
+      "version": "1.0.0",
+      "timing": {
+        "total_seconds": 577.52,
+        "purple_agent_seconds": 272.8,
+        "green_agent_seconds": 0.0,
+        "avg_seconds_per_task": 115.5,
+        "purple_agent_percent": 47.2
+      }
+    }
+  ]
+}
