@@ -1,0 +1,119 @@
+{
+  "participants": {
+    "agent": "019ba27e-3b82-7d43-8822-51357ccd4861"
+  },
+  "results": [
+    {
+      "participants": {
+        "agent": "http://agent:9009/"
+      },
+      "results": [
+        {
+          "task_idx": "456",
+          "task_category": "sales_insight_mining",
+          "crm_reward": 1.0,
+          "total_score": 99.84064,
+          "dimension_scores": {
+            "FUNCTIONAL": 100.0,
+            "DRIFT_ADAPTATION": 100,
+            "TOKEN_EFFICIENCY": 98.672,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 100,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 100
+          },
+          "agent_answer": "Quantum Circuits Inc., Adaptive Design Solutions\n{\n  \"task_id\": \"456\",\n  \"category\": \"sales_insight_mining\",\n  \"answer\": \"Quantum Circuits Inc., Adaptive Design Solutions\",\n  \"full_response\": \"<think>\\nOkay, let me go through the transcripts provided. The user wants to know which competitors we're at a disadvantage against for the opportunity 006Wt000007B8PeIAK.\\n\\nLooking at the first transcript from February 8th, there's a mention of \\\"Quantum Circuits Inc.\\\" in the context of case studies. Th",
+          "expected_answer": "['Adaptive Design Solutions']",
+          "success": true,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 332,
+            "tool_calls": 4,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 28.29,
+            "purple_agent_seconds": 28.29,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          }
+        },
+        {
+          "task_idx": "102",
+          "task_category": "monthly_trend_analysis",
+          "crm_reward": 0,
+          "total_score": 53.24928,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 98.744,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 100
+          },
+          "agent_answer": "September\n{\n  \"task_id\": \"102\",\n  \"category\": \"monthly_trend_analysis\",\n  \"answer\": \"September\",\n  \"full_response\": \"<think>\\nOkay, let me process this. The user's query returned a result where the month_num is \\\"09\\\" and the case_count is 1. Wait, but the question was asking for a month where the number of cases was \\\"significantly higher\\\" compared to others. If the highest count is only 1, that might not be significant. But maybe in the context of the data, that's the highest. \\n\\nHmm, perhap",
+          "expected_answer": "['September']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 314,
+            "tool_calls": 5,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 50.39,
+            "purple_agent_seconds": 50.39,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          }
+        }
+      ],
+      "summary": {
+        "pass_rate": 0.5,
+        "total_tasks": 2,
+        "total_passed": 1,
+        "avg_score": 76.5
+      },
+      "dimension_averages": {
+        "FUNCTIONAL": 65.0,
+        "DRIFT_ADAPTATION": 50.0,
+        "TOKEN_EFFICIENCY": 98.7,
+        "QUERY_EFFICIENCY": 100.0,
+        "ERROR_RECOVERY": 65.0,
+        "TRAJECTORY_EFFICIENCY": 100.0,
+        "HALLUCINATION_RATE": 100.0
+      },
+      "by_category": {
+        "sales_insight_mining": {
+          "count": 1,
+          "passed": 1,
+          "total_score": 99.84064,
+          "pass_rate": 1.0,
+          "avg_score": 99.84064
+        },
+        "monthly_trend_analysis": {
+          "count": 1,
+          "passed": 0,
+          "total_score": 53.24928,
+          "pass_rate": 0.0,
+          "avg_score": 53.24928
+        }
+      },
+      "extension_metrics": {
+        "drift_level": "none",
+        "rot_level": "none",
+        "org_type": "b2b"
+      },
+      "timestamp": "2026-02-26T20:18:43.165728",
+      "version": "1.0.0",
+      "timing": {
+        "total_seconds": 83.14,
+        "purple_agent_seconds": 78.68,
+        "green_agent_seconds": 0.0,
+        "avg_seconds_per_task": 41.57,
+        "purple_agent_percent": 94.6
+      }
+    }
+  ]
+}
