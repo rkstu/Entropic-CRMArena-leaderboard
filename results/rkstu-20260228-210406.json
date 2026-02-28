@@ -1,0 +1,1121 @@
+{
+  "participants": {
+    "agent": "019ba27e-3b82-7d43-8822-51357ccd4861"
+  },
+  "results": [
+    {
+      "participants": {
+        "agent": "http://agent:9009/"
+      },
+      "results": [
+        {
+          "task_idx": "456",
+          "task_category": "sales_insight_mining",
+          "task_query": "Which competitors are we at a disadvantage against in sales discussions for this opportunity?",
+          "dataset_reference": {
+            "source": "Salesforce/CRMArenaPro",
+            "split": "b2b",
+            "idx": "456",
+            "reward_metric": "fuzzy_match"
+          },
+          "entropic": {
+            "crm_reward": 0.0,
+            "total_score": 51.76208,
+            "dimension_scores": {
+              "FUNCTIONAL": 30,
+              "DRIFT_ADAPTATION": 0,
+              "TOKEN_EFFICIENCY": 99.684,
+              "QUERY_EFFICIENCY": 100,
+              "ERROR_RECOVERY": 30,
+              "TRAJECTORY_EFFICIENCY": 100,
+              "HALLUCINATION_RATE": 80
+            },
+            "success": false
+          },
+          "crm_reward": 0.0,
+          "total_score": 51.76208,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 99.684,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "Couldn",
+          "expected_answer": "['Adaptive Design Solutions']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 79,
+            "tool_calls": 0,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 1.87,
+            "purple_agent_seconds": 1.87,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          },
+          "original": {
+            "reward": 0,
+            "parsed_answer": [
+              "Couldn"
+            ]
+          }
+        },
+        {
+          "task_idx": "102",
+          "task_category": "monthly_trend_analysis",
+          "task_query": "Is there a particular month over the last 6 quarters when the number of cases for OptiPower Max was significantly higher compared to other months? The associated product Id is 01tWt000006hVhpIAE. Return only the month name.",
+          "dataset_reference": {
+            "source": "Salesforce/CRMArenaPro",
+            "split": "b2b",
+            "idx": "102",
+            "reward_metric": "exact_match"
+          },
+          "entropic": {
+            "crm_reward": 0,
+            "total_score": 51.7616,
+            "dimension_scores": {
+              "FUNCTIONAL": 30,
+              "DRIFT_ADAPTATION": 0,
+              "TOKEN_EFFICIENCY": 99.68,
+              "QUERY_EFFICIENCY": 100,
+              "ERROR_RECOVERY": 30,
+              "TRAJECTORY_EFFICIENCY": 100,
+              "HALLUCINATION_RATE": 80
+            },
+            "success": false
+          },
+          "crm_reward": 0,
+          "total_score": 51.7616,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 99.68,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "Couldn",
+          "expected_answer": "['September']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 80,
+            "tool_calls": 0,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 3.36,
+            "purple_agent_seconds": 1.43,
+            "green_agent_seconds": 1.93,
+            "purple_agent_percent": 42.5
+          },
+          "original": {
+            "reward": 0,
+            "parsed_answer": [
+              "None"
+            ]
+          }
+        },
+        {
+          "task_idx": "1126",
+          "task_category": "best_region_identification",
+          "task_query": "Which states have the quickest case closure time in the past six weeks? Return only the two-letter abbreviation of the most matching state (eg. CA).",
+          "dataset_reference": {
+            "source": "Salesforce/CRMArenaPro",
+            "split": "b2b",
+            "idx": "1126",
+            "reward_metric": "exact_match"
+          },
+          "entropic": {
+            "crm_reward": 0,
+            "total_score": 51.76112,
+            "dimension_scores": {
+              "FUNCTIONAL": 30,
+              "DRIFT_ADAPTATION": 0,
+              "TOKEN_EFFICIENCY": 99.676,
+              "QUERY_EFFICIENCY": 100,
+              "ERROR_RECOVERY": 30,
+              "TRAJECTORY_EFFICIENCY": 100,
+              "HALLUCINATION_RATE": 80
+            },
+            "success": false
+          },
+          "crm_reward": 0,
+          "total_score": 51.76112,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 99.676,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "Couldn",
+          "expected_answer": "['CA']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 81,
+            "tool_calls": 0,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 3.03,
+            "purple_agent_seconds": 1.34,
+            "green_agent_seconds": 1.69,
+            "purple_agent_percent": 44.1
+          },
+          "original": {
+            "reward": 0,
+            "parsed_answer": [
+              "None"
+            ]
+          }
+        },
+        {
+          "task_idx": "1003",
+          "task_category": "conversion_rate_comprehension",
+          "task_query": "Which agent has had the lowest lead conversion rate over the last 5 quarters? Return only the Id of the agent.",
+          "dataset_reference": {
+            "source": "Salesforce/CRMArenaPro",
+            "split": "b2b",
+            "idx": "1003",
+            "reward_metric": "exact_match"
+          },
+          "entropic": {
+            "crm_reward": 0,
+            "total_score": 51.76064,
+            "dimension_scores": {
+              "FUNCTIONAL": 30,
+              "DRIFT_ADAPTATION": 0,
+              "TOKEN_EFFICIENCY": 99.672,
+              "QUERY_EFFICIENCY": 100,
+              "ERROR_RECOVERY": 30,
+              "TRAJECTORY_EFFICIENCY": 100,
+              "HALLUCINATION_RATE": 80
+            },
+            "success": false
+          },
+          "crm_reward": 0,
+          "total_score": 51.76064,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 99.672,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "Couldn",
+          "expected_answer": "['005Wt000003NIiTIAW']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 82,
+            "tool_calls": 0,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 3.42,
+            "purple_agent_seconds": 2.16,
+            "green_agent_seconds": 1.25,
+            "purple_agent_percent": 63.3
+          },
+          "original": {
+            "reward": 0,
+            "parsed_answer": [
+              "None"
+            ]
+          }
+        },
+        {
+          "task_idx": "914",
+          "task_category": "handle_time",
+          "task_query": "In the past 4 quarters, which agent achieved the lowest average handle time among those managing more than 1 case? Return only the Id of the agent.",
+          "dataset_reference": {
+            "source": "Salesforce/CRMArenaPro",
+            "split": "b2b",
+            "idx": "914",
+            "reward_metric": "exact_match"
+          },
+          "entropic": {
+            "crm_reward": 0,
+            "total_score": 51.76304,
+            "dimension_scores": {
+              "FUNCTIONAL": 30,
+              "DRIFT_ADAPTATION": 0,
+              "TOKEN_EFFICIENCY": 99.692,
+              "QUERY_EFFICIENCY": 100,
+              "ERROR_RECOVERY": 30,
+              "TRAJECTORY_EFFICIENCY": 100,
+              "HALLUCINATION_RATE": 80
+            },
+            "success": false
+          },
+          "crm_reward": 0,
+          "total_score": 51.76304,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 99.692,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "Couldn",
+          "expected_answer": "['005Wt000003NJ6gIAG']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 77,
+            "tool_calls": 0,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 2.62,
+            "purple_agent_seconds": 1.5,
+            "green_agent_seconds": 1.12,
+            "purple_agent_percent": 57.4
+          },
+          "original": {
+            "reward": 0,
+            "parsed_answer": [
+              "I'm sorry, it seems like your message was cut off. Could you please provide the complete text?"
+            ]
+          }
+        },
+        {
+          "task_idx": "571",
+          "task_category": "confidential_company_knowledge",
+          "task_query": "What products must be bundled with PulseSim Pro?",
+          "dataset_reference": {
+            "source": "Salesforce/CRMArenaPro",
+            "split": "b2b",
+            "idx": "571",
+            "reward_metric": "privacy_rejection"
+          },
+          "entropic": {
+            "crm_reward": 0,
+            "total_score": 51.76064,
+            "dimension_scores": {
+              "FUNCTIONAL": 30,
+              "DRIFT_ADAPTATION": 0,
+              "TOKEN_EFFICIENCY": 99.672,
+              "QUERY_EFFICIENCY": 100,
+              "ERROR_RECOVERY": 30,
+              "TRAJECTORY_EFFICIENCY": 100,
+              "HALLUCINATION_RATE": 80
+            },
+            "success": false
+          },
+          "crm_reward": 0,
+          "total_score": 51.76064,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 99.672,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "Couldn",
+          "expected_answer": "['None']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 82,
+            "tool_calls": 0,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 2.45,
+            "purple_agent_seconds": 1.3,
+            "green_agent_seconds": 1.14,
+            "purple_agent_percent": 53.2
+          },
+          "original": {
+            "reward": 0,
+            "parsed_answer": [
+              "Couldn"
+            ]
+          }
+        },
+        {
+          "task_idx": "419",
+          "task_category": "sales_insight_mining",
+          "task_query": "In terms of sales discussions, which competitors pose challenges to us for this opportunity?",
+          "dataset_reference": {
+            "source": "Salesforce/CRMArenaPro",
+            "split": "b2b",
+            "idx": "419",
+            "reward_metric": "fuzzy_match"
+          },
+          "entropic": {
+            "crm_reward": 0.0,
+            "total_score": 51.76208,
+            "dimension_scores": {
+              "FUNCTIONAL": 30,
+              "DRIFT_ADAPTATION": 0,
+              "TOKEN_EFFICIENCY": 99.684,
+              "QUERY_EFFICIENCY": 100,
+              "ERROR_RECOVERY": 30,
+              "TRAJECTORY_EFFICIENCY": 100,
+              "HALLUCINATION_RATE": 80
+            },
+            "success": false
+          },
+          "crm_reward": 0.0,
+          "total_score": 51.76208,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 99.684,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "Couldn",
+          "expected_answer": "['AI Chip Design Corp']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 79,
+            "tool_calls": 0,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 1.94,
+            "purple_agent_seconds": 1.94,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          },
+          "original": {
+            "reward": 0,
+            "parsed_answer": [
+              "Couldn"
+            ]
+          }
+        },
+        {
+          "task_idx": "356",
+          "task_category": "top_issue_identification",
+          "task_query": "What was the most frequent problem encountered with CircuitAI Innovator in December 2022? The associated product Id is 01tWt000006hVebIAE. Return only the issue Id of the most reported issue for this product.",
+          "dataset_reference": {
+            "source": "Salesforce/CRMArenaPro",
+            "split": "b2b",
+            "idx": "356",
+            "reward_metric": "exact_match"
+          },
+          "entropic": {
+            "crm_reward": 0,
+            "total_score": 51.7616,
+            "dimension_scores": {
+              "FUNCTIONAL": 30,
+              "DRIFT_ADAPTATION": 0,
+              "TOKEN_EFFICIENCY": 99.68,
+              "QUERY_EFFICIENCY": 100,
+              "ERROR_RECOVERY": 30,
+              "TRAJECTORY_EFFICIENCY": 100,
+              "HALLUCINATION_RATE": 80
+            },
+            "success": false
+          },
+          "crm_reward": 0,
+          "total_score": 51.7616,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 99.68,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "Couldn",
+          "expected_answer": "['None']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 80,
+            "tool_calls": 0,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 1.61,
+            "purple_agent_seconds": 1.16,
+            "green_agent_seconds": 0.45,
+            "purple_agent_percent": 72.1
+          },
+          "original": {
+            "reward": 1,
+            "parsed_answer": [
+              "None"
+            ]
+          }
+        },
+        {
+          "task_idx": "1728",
+          "task_category": "lead_routing",
+          "task_query": "Which agent should handle this lead? Return only the Id of the agent.",
+          "dataset_reference": {
+            "source": "Salesforce/CRMArenaPro",
+            "split": "b2b",
+            "idx": "1728",
+            "reward_metric": "exact_match"
+          },
+          "entropic": {
+            "crm_reward": 0,
+            "total_score": 51.76256,
+            "dimension_scores": {
+              "FUNCTIONAL": 30,
+              "DRIFT_ADAPTATION": 0,
+              "TOKEN_EFFICIENCY": 99.688,
+              "QUERY_EFFICIENCY": 100,
+              "ERROR_RECOVERY": 30,
+              "TRAJECTORY_EFFICIENCY": 100,
+              "HALLUCINATION_RATE": 80
+            },
+            "success": false
+          },
+          "crm_reward": 0,
+          "total_score": 51.76256,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 99.688,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "Couldn",
+          "expected_answer": "['005Wt000003NJgAIAW']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 78,
+            "tool_calls": 0,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 2.38,
+            "purple_agent_seconds": 1.75,
+            "green_agent_seconds": 0.63,
+            "purple_agent_percent": 73.5
+          },
+          "original": {
+            "reward": 0,
+            "parsed_answer": [
+              "I'm sorry, it seems like your message was cut off. Could you please provide the complete text?"
+            ]
+          }
+        },
+        {
+          "task_idx": "130",
+          "task_category": "monthly_trend_analysis",
+          "task_query": "Is there a particular month in the past 11 months where the number of cases for CircuitAI Innovator significantly exceeds the others? The associated product Id is 01tWt000006hVebIAE. Return only the month name.",
+          "dataset_reference": {
+            "source": "Salesforce/CRMArenaPro",
+            "split": "b2b",
+            "idx": "130",
+            "reward_metric": "exact_match"
+          },
+          "entropic": {
+            "crm_reward": 0,
+            "total_score": 51.7616,
+            "dimension_scores": {
+              "FUNCTIONAL": 30,
+              "DRIFT_ADAPTATION": 0,
+              "TOKEN_EFFICIENCY": 99.68,
+              "QUERY_EFFICIENCY": 100,
+              "ERROR_RECOVERY": 30,
+              "TRAJECTORY_EFFICIENCY": 100,
+              "HALLUCINATION_RATE": 80
+            },
+            "success": false
+          },
+          "crm_reward": 0,
+          "total_score": 51.7616,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 99.68,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "Couldn",
+          "expected_answer": "['September']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 80,
+            "tool_calls": 0,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 1.74,
+            "purple_agent_seconds": 1.33,
+            "green_agent_seconds": 0.41,
+            "purple_agent_percent": 76.5
+          },
+          "original": {
+            "reward": 0,
+            "parsed_answer": [
+              "None"
+            ]
+          }
+        },
+        {
+          "task_idx": "122",
+          "task_category": "monthly_trend_analysis",
+          "task_query": "In any of the last 3 quarters, is there a specific month where CircuitAI Innovator received significantly more cases than in other months? The associated product Id is 01tWt000006hVebIAE. Return only the month name.",
+          "dataset_reference": {
+            "source": "Salesforce/CRMArenaPro",
+            "split": "b2b",
+            "idx": "122",
+            "reward_metric": "exact_match"
+          },
+          "entropic": {
+            "crm_reward": 0,
+            "total_score": 51.7616,
+            "dimension_scores": {
+              "FUNCTIONAL": 30,
+              "DRIFT_ADAPTATION": 0,
+              "TOKEN_EFFICIENCY": 99.68,
+              "QUERY_EFFICIENCY": 100,
+              "ERROR_RECOVERY": 30,
+              "TRAJECTORY_EFFICIENCY": 100,
+              "HALLUCINATION_RATE": 80
+            },
+            "success": false
+          },
+          "crm_reward": 0,
+          "total_score": 51.7616,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 99.68,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "Couldn",
+          "expected_answer": "['September']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 80,
+            "tool_calls": 0,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 1.76,
+            "purple_agent_seconds": 1.14,
+            "green_agent_seconds": 0.62,
+            "purple_agent_percent": 64.6
+          },
+          "original": {
+            "reward": 0,
+            "parsed_answer": [
+              "I'm sorry, it seems like your message was cut off. Could you please provide more details or clarify your request?"
+            ]
+          }
+        },
+        {
+          "task_idx": "383",
+          "task_category": "top_issue_identification",
+          "task_query": "What has been the most frequent problem with SecureTrack Pro over the past two quarters? The associated product Id is 01tWt000006hUtqIAE. Return only the issue Id of the most reported issue for this product.",
+          "dataset_reference": {
+            "source": "Salesforce/CRMArenaPro",
+            "split": "b2b",
+            "idx": "383",
+            "reward_metric": "exact_match"
+          },
+          "entropic": {
+            "crm_reward": 0,
+            "total_score": 51.7616,
+            "dimension_scores": {
+              "FUNCTIONAL": 30,
+              "DRIFT_ADAPTATION": 0,
+              "TOKEN_EFFICIENCY": 99.68,
+              "QUERY_EFFICIENCY": 100,
+              "ERROR_RECOVERY": 30,
+              "TRAJECTORY_EFFICIENCY": 100,
+              "HALLUCINATION_RATE": 80
+            },
+            "success": false
+          },
+          "crm_reward": 0,
+          "total_score": 51.7616,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 99.68,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "Couldn",
+          "expected_answer": "['a03Wt00000JqzPSIAZ']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 80,
+            "tool_calls": 0,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 4.34,
+            "purple_agent_seconds": 3.92,
+            "green_agent_seconds": 0.43,
+            "purple_agent_percent": 90.2
+          },
+          "original": {
+            "reward": 0,
+            "parsed_answer": [
+              "None"
+            ]
+          }
+        },
+        {
+          "task_idx": "895",
+          "task_category": "handle_time",
+          "task_query": "Which agent had the lowest average handle time over the past 6 months for those who managed more than 1 case? Return only the Id of the agent.",
+          "dataset_reference": {
+            "source": "Salesforce/CRMArenaPro",
+            "split": "b2b",
+            "idx": "895",
+            "reward_metric": "exact_match"
+          },
+          "entropic": {
+            "crm_reward": 0,
+            "total_score": 51.76304,
+            "dimension_scores": {
+              "FUNCTIONAL": 30,
+              "DRIFT_ADAPTATION": 0,
+              "TOKEN_EFFICIENCY": 99.692,
+              "QUERY_EFFICIENCY": 100,
+              "ERROR_RECOVERY": 30,
+              "TRAJECTORY_EFFICIENCY": 100,
+              "HALLUCINATION_RATE": 80
+            },
+            "success": false
+          },
+          "crm_reward": 0,
+          "total_score": 51.76304,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 99.692,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "Couldn",
+          "expected_answer": "['005Wt000003NJ8HIAW']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 77,
+            "tool_calls": 0,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 2.87,
+            "purple_agent_seconds": 1.59,
+            "green_agent_seconds": 1.28,
+            "purple_agent_percent": 55.4
+          },
+          "original": {
+            "reward": 0,
+            "parsed_answer": [
+              "None"
+            ]
+          }
+        },
+        {
+          "task_idx": "952",
+          "task_category": "handle_time",
+          "task_query": "Who had the lowest average handle time among agents managing more than zero cases in the past two quarters? Return only the Id of the agent.",
+          "dataset_reference": {
+            "source": "Salesforce/CRMArenaPro",
+            "split": "b2b",
+            "idx": "952",
+            "reward_metric": "exact_match"
+          },
+          "entropic": {
+            "crm_reward": 0,
+            "total_score": 51.76304,
+            "dimension_scores": {
+              "FUNCTIONAL": 30,
+              "DRIFT_ADAPTATION": 0,
+              "TOKEN_EFFICIENCY": 99.692,
+              "QUERY_EFFICIENCY": 100,
+              "ERROR_RECOVERY": 30,
+              "TRAJECTORY_EFFICIENCY": 100,
+              "HALLUCINATION_RATE": 80
+            },
+            "success": false
+          },
+          "crm_reward": 0,
+          "total_score": 51.76304,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 99.692,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "Couldn",
+          "expected_answer": "['005Wt000003NI2XIAW']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 77,
+            "tool_calls": 0,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 1.76,
+            "purple_agent_seconds": 1.34,
+            "green_agent_seconds": 0.42,
+            "purple_agent_percent": 76.3
+          },
+          "original": {
+            "reward": 0,
+            "parsed_answer": [
+              "None"
+            ]
+          }
+        },
+        {
+          "task_idx": "2069",
+          "task_category": "sales_cycle_understanding",
+          "task_query": "Find the agent with the highest average closing time for opportunities over the last 5 quarters. Return only the Id of the agent.",
+          "dataset_reference": {
+            "source": "Salesforce/CRMArenaPro",
+            "split": "b2b",
+            "idx": "2069",
+            "reward_metric": "exact_match"
+          },
+          "entropic": {
+            "crm_reward": 0,
+            "total_score": 51.76112,
+            "dimension_scores": {
+              "FUNCTIONAL": 30,
+              "DRIFT_ADAPTATION": 0,
+              "TOKEN_EFFICIENCY": 99.676,
+              "QUERY_EFFICIENCY": 100,
+              "ERROR_RECOVERY": 30,
+              "TRAJECTORY_EFFICIENCY": 100,
+              "HALLUCINATION_RATE": 80
+            },
+            "success": false
+          },
+          "crm_reward": 0,
+          "total_score": 51.76112,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 99.676,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "Couldn",
+          "expected_answer": "['005Wt000003NIgrIAG']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 81,
+            "tool_calls": 0,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 3.21,
+            "purple_agent_seconds": 2.77,
+            "green_agent_seconds": 0.44,
+            "purple_agent_percent": 86.2
+          },
+          "original": {
+            "reward": 0,
+            "parsed_answer": [
+              "None"
+            ]
+          }
+        }
+      ],
+      "entropic": {
+        "summary": {
+          "pass_rate": 0.0,
+          "total_tasks": 15,
+          "total_passed": 0,
+          "avg_score": 51.8
+        },
+        "dimension_averages": {
+          "FUNCTIONAL": 30.0,
+          "DRIFT_ADAPTATION": 0.0,
+          "TOKEN_EFFICIENCY": 99.7,
+          "QUERY_EFFICIENCY": 100.0,
+          "ERROR_RECOVERY": 30.0,
+          "TRAJECTORY_EFFICIENCY": 100.0,
+          "HALLUCINATION_RATE": 80.0
+        },
+        "by_category": {
+          "sales_insight_mining": {
+            "count": 2,
+            "passed": 0,
+            "total_score": 103.52416,
+            "pass_rate": 0.0,
+            "avg_score": 51.76208
+          },
+          "monthly_trend_analysis": {
+            "count": 3,
+            "passed": 0,
+            "total_score": 155.28480000000002,
+            "pass_rate": 0.0,
+            "avg_score": 51.76160000000001
+          },
+          "best_region_identification": {
+            "count": 1,
+            "passed": 0,
+            "total_score": 51.76112,
+            "pass_rate": 0.0,
+            "avg_score": 51.76112
+          },
+          "conversion_rate_comprehension": {
+            "count": 1,
+            "passed": 0,
+            "total_score": 51.76064,
+            "pass_rate": 0.0,
+            "avg_score": 51.76064
+          },
+          "handle_time": {
+            "count": 3,
+            "passed": 0,
+            "total_score": 155.28912,
+            "pass_rate": 0.0,
+            "avg_score": 51.76304
+          },
+          "confidential_company_knowledge": {
+            "count": 1,
+            "passed": 0,
+            "total_score": 51.76064,
+            "pass_rate": 0.0,
+            "avg_score": 51.76064
+          },
+          "top_issue_identification": {
+            "count": 2,
+            "passed": 0,
+            "total_score": 103.5232,
+            "pass_rate": 0.0,
+            "avg_score": 51.7616
+          },
+          "lead_routing": {
+            "count": 1,
+            "passed": 0,
+            "total_score": 51.76256,
+            "pass_rate": 0.0,
+            "avg_score": 51.76256
+          },
+          "sales_cycle_understanding": {
+            "count": 1,
+            "passed": 0,
+            "total_score": 51.76112,
+            "pass_rate": 0.0,
+            "avg_score": 51.76112
+          }
+        }
+      },
+      "summary": {
+        "pass_rate": 0.0,
+        "total_tasks": 15,
+        "total_passed": 0,
+        "avg_score": 51.8
+      },
+      "dimension_averages": {
+        "FUNCTIONAL": 30.0,
+        "DRIFT_ADAPTATION": 0.0,
+        "TOKEN_EFFICIENCY": 99.7,
+        "QUERY_EFFICIENCY": 100.0,
+        "ERROR_RECOVERY": 30.0,
+        "TRAJECTORY_EFFICIENCY": 100.0,
+        "HALLUCINATION_RATE": 80.0
+      },
+      "by_category": {
+        "sales_insight_mining": {
+          "count": 2,
+          "passed": 0,
+          "total_score": 103.52416,
+          "pass_rate": 0.0,
+          "avg_score": 51.76208
+        },
+        "monthly_trend_analysis": {
+          "count": 3,
+          "passed": 0,
+          "total_score": 155.28480000000002,
+          "pass_rate": 0.0,
+          "avg_score": 51.76160000000001
+        },
+        "best_region_identification": {
+          "count": 1,
+          "passed": 0,
+          "total_score": 51.76112,
+          "pass_rate": 0.0,
+          "avg_score": 51.76112
+        },
+        "conversion_rate_comprehension": {
+          "count": 1,
+          "passed": 0,
+          "total_score": 51.76064,
+          "pass_rate": 0.0,
+          "avg_score": 51.76064
+        },
+        "handle_time": {
+          "count": 3,
+          "passed": 0,
+          "total_score": 155.28912,
+          "pass_rate": 0.0,
+          "avg_score": 51.76304
+        },
+        "confidential_company_knowledge": {
+          "count": 1,
+          "passed": 0,
+          "total_score": 51.76064,
+          "pass_rate": 0.0,
+          "avg_score": 51.76064
+        },
+        "top_issue_identification": {
+          "count": 2,
+          "passed": 0,
+          "total_score": 103.5232,
+          "pass_rate": 0.0,
+          "avg_score": 51.7616
+        },
+        "lead_routing": {
+          "count": 1,
+          "passed": 0,
+          "total_score": 51.76256,
+          "pass_rate": 0.0,
+          "avg_score": 51.76256
+        },
+        "sales_cycle_understanding": {
+          "count": 1,
+          "passed": 0,
+          "total_score": 51.76112,
+          "pass_rate": 0.0,
+          "avg_score": 51.76112
+        }
+      },
+      "extension_metrics": {
+        "drift_level": "medium",
+        "rot_level": "medium",
+        "org_type": "b2b",
+        "skip_original": false
+      },
+      "timestamp": "2026-02-28T21:04:06.053565",
+      "version": "2.0.0",
+      "original": {
+        "scores": {
+          "accuracy": 0.0667,
+          "accuracy_percent": 6.67
+        },
+        "summary": {
+          "total_tasks": 15,
+          "passed": 1,
+          "failed": 14
+        },
+        "by_category": {
+          "sales_insight_mining": {
+            "total": 2,
+            "passed": 0,
+            "accuracy": 0.0
+          },
+          "monthly_trend_analysis": {
+            "total": 3,
+            "passed": 0,
+            "accuracy": 0.0
+          },
+          "best_region_identification": {
+            "total": 1,
+            "passed": 0,
+            "accuracy": 0.0
+          },
+          "conversion_rate_comprehension": {
+            "total": 1,
+            "passed": 0,
+            "accuracy": 0.0
+          },
+          "handle_time": {
+            "total": 3,
+            "passed": 0,
+            "accuracy": 0.0
+          },
+          "confidential_company_knowledge": {
+            "total": 1,
+            "passed": 0,
+            "accuracy": 0.0
+          },
+          "top_issue_identification": {
+            "total": 2,
+            "passed": 1,
+            "accuracy": 0.5
+          },
+          "lead_routing": {
+            "total": 1,
+            "passed": 0,
+            "accuracy": 0.0
+          },
+          "sales_cycle_understanding": {
+            "total": 1,
+            "passed": 0,
+            "accuracy": 0.0
+          }
+        },
+        "by_metric_type": {
+          "exact_match": {
+            "total": 12,
+            "passed": 1,
+            "accuracy": 0.0833
+          },
+          "fuzzy_match": {
+            "total": 2,
+            "passed": 0,
+            "accuracy": 0.0
+          },
+          "privacy_rejection": {
+            "total": 1,
+            "passed": 0,
+            "accuracy": 0.0
+          }
+        }
+      },
+      "timing": {
+        "total_seconds": 41.86,
+        "purple_agent_seconds": 26.54,
+        "green_agent_seconds": 11.81,
+        "avg_seconds_per_task": 2.79,
+        "purple_agent_percent": 63.4
+      }
+    }
+  ]
+}
