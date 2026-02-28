@@ -374,6 +374,19 @@
         "green_agent_seconds": 0.0,
         "avg_seconds_per_task": 117.65,
         "purple_agent_percent": 74.0
+      },
+      "original": {
+        "scores": {
+          "accuracy": null,
+          "accuracy_percent": null
+        },
+        "summary": {
+          "total_tasks": null,
+          "passed": null,
+          "failed": null
+        },
+        "by_category": {},
+        "by_metric_type": {}
       }
     }
   ]

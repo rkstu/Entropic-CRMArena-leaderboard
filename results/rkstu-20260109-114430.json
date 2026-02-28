@@ -268,7 +268,20 @@
         "org_type": "b2b"
       },
       "timestamp": "2026-01-09T11:44:29.545791",
-      "version": "1.0.0"
+      "version": "1.0.0",
+      "original": {
+        "scores": {
+          "accuracy": null,
+          "accuracy_percent": null
+        },
+        "summary": {
+          "total_tasks": null,
+          "passed": null,
+          "failed": null
+        },
+        "by_category": {},
+        "by_metric_type": {}
+      }
     }
   ]
 }
