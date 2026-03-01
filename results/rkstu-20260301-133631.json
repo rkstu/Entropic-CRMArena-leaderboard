@@ -1,0 +1,470 @@
+{
+  "participants": {
+    "agent": "019ba27e-3b82-7d43-8822-51357ccd4861"
+  },
+  "results": [
+    {
+      "participants": {
+        "agent": "http://agent:9009/"
+      },
+      "results": [
+        {
+          "task_idx": "456",
+          "task_category": "sales_insight_mining",
+          "task_query": "Which competitors are we at a disadvantage against in sales discussions for this opportunity?",
+          "dataset_reference": {
+            "source": "Salesforce/CRMArenaPro",
+            "split": "b2b",
+            "idx": "456",
+            "reward_metric": "fuzzy_match"
+          },
+          "entropic": {
+            "crm_reward": 1.0,
+            "total_score": 99.89824,
+            "dimension_scores": {
+              "FUNCTIONAL": 100.0,
+              "DRIFT_ADAPTATION": 100,
+              "TOKEN_EFFICIENCY": 99.152,
+              "QUERY_EFFICIENCY": 100,
+              "ERROR_RECOVERY": 100,
+              "TRAJECTORY_EFFICIENCY": 100,
+              "HALLUCINATION_RATE": 100
+            },
+            "success": true
+          },
+          "crm_reward": 1.0,
+          "total_score": 99.89824,
+          "dimension_scores": {
+            "FUNCTIONAL": 100.0,
+            "DRIFT_ADAPTATION": 100,
+            "TOKEN_EFFICIENCY": 99.152,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 100,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 100
+          },
+          "agent_answer": "Quantum Circuits Inc., Adaptive Design Solutions",
+          "expected_answer": "['Adaptive Design Solutions']",
+          "success": true,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 212,
+            "tool_calls": 1,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 3.75,
+            "purple_agent_seconds": 3.75,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          },
+          "original": {
+            "reward": 1,
+            "parsed_answer": [
+              "Quantum Circuits Inc., Adaptive Design Solutions"
+            ]
+          }
+        },
+        {
+          "task_idx": "102",
+          "task_category": "monthly_trend_analysis",
+          "task_query": "Is there a particular month over the last 6 quarters when the number of cases for OptiPower Max was significantly higher compared to other months? The associated product Id is 01tWt000006hVhpIAE. Return only the month name.",
+          "dataset_reference": {
+            "source": "Salesforce/CRMArenaPro",
+            "split": "b2b",
+            "idx": "102",
+            "reward_metric": "exact_match"
+          },
+          "entropic": {
+            "crm_reward": 1,
+            "total_score": 98.3472,
+            "dimension_scores": {
+              "FUNCTIONAL": 100,
+              "DRIFT_ADAPTATION": 100,
+              "TOKEN_EFFICIENCY": 99.56,
+              "QUERY_EFFICIENCY": 100,
+              "ERROR_RECOVERY": 100,
+              "TRAJECTORY_EFFICIENCY": 100,
+              "HALLUCINATION_RATE": 80
+            },
+            "success": true
+          },
+          "crm_reward": 1,
+          "total_score": 98.3472,
+          "dimension_scores": {
+            "FUNCTIONAL": 100,
+            "DRIFT_ADAPTATION": 100,
+            "TOKEN_EFFICIENCY": 99.56,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 100,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "September",
+          "expected_answer": "['September']",
+          "success": true,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 110,
+            "tool_calls": 0,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 5.78,
+            "purple_agent_seconds": 5.78,
+            "green_agent_seconds": 0.0,
+            "purple_agent_percent": 100.0
+          },
+          "original": {
+            "reward": 1,
+            "parsed_answer": [
+              "September"
+            ]
+          }
+        },
+        {
+          "task_idx": "1126",
+          "task_category": "best_region_identification",
+          "task_query": "Which states have the quickest case closure time in the past six weeks? Return only the two-letter abbreviation of the most matching state (eg. CA).",
+          "dataset_reference": {
+            "source": "Salesforce/CRMArenaPro",
+            "split": "b2b",
+            "idx": "1126",
+            "reward_metric": "exact_match"
+          },
+          "entropic": {
+            "crm_reward": 0,
+            "total_score": 53.1216,
+            "dimension_scores": {
+              "FUNCTIONAL": 30,
+              "DRIFT_ADAPTATION": 0,
+              "TOKEN_EFFICIENCY": 99.18,
+              "QUERY_EFFICIENCY": 98.5,
+              "ERROR_RECOVERY": 30,
+              "TRAJECTORY_EFFICIENCY": 100,
+              "HALLUCINATION_RATE": 100
+            },
+            "success": false
+          },
+          "crm_reward": 0,
+          "total_score": 53.1216,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 99.18,
+            "QUERY_EFFICIENCY": 98.5,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 100
+          },
+          "agent_answer": "2023-09-01",
+          "expected_answer": "['CA']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 205,
+            "tool_calls": 3,
+            "queries": 1
+          },
+          "timing": {
+            "total_seconds": 15.11,
+            "purple_agent_seconds": 13.74,
+            "green_agent_seconds": 1.37,
+            "purple_agent_percent": 90.9
+          },
+          "original": {
+            "reward": 0,
+            "parsed_answer": [
+              "None"
+            ]
+          }
+        },
+        {
+          "task_idx": "1003",
+          "task_category": "conversion_rate_comprehension",
+          "task_query": "Which agent has had the lowest lead conversion rate over the last 5 quarters? Return only the Id of the agent.",
+          "dataset_reference": {
+            "source": "Salesforce/CRMArenaPro",
+            "split": "b2b",
+            "idx": "1003",
+            "reward_metric": "exact_match"
+          },
+          "entropic": {
+            "crm_reward": 0,
+            "total_score": 51.71024,
+            "dimension_scores": {
+              "FUNCTIONAL": 30,
+              "DRIFT_ADAPTATION": 0,
+              "TOKEN_EFFICIENCY": 99.252,
+              "QUERY_EFFICIENCY": 100,
+              "ERROR_RECOVERY": 30,
+              "TRAJECTORY_EFFICIENCY": 100,
+              "HALLUCINATION_RATE": 80
+            },
+            "success": false
+          },
+          "crm_reward": 0,
+          "total_score": 51.71024,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 99.252,
+            "QUERY_EFFICIENCY": 100,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 80
+          },
+          "agent_answer": "005Wt000003NBcBIAW",
+          "expected_answer": "['005Wt000003NIiTIAW']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 187,
+            "tool_calls": 0,
+            "queries": 0
+          },
+          "timing": {
+            "total_seconds": 12.51,
+            "purple_agent_seconds": 12.07,
+            "green_agent_seconds": 0.45,
+            "purple_agent_percent": 96.4
+          },
+          "original": {
+            "reward": 0,
+            "parsed_answer": [
+              "005Wt000003NBcBIAW"
+            ]
+          }
+        },
+        {
+          "task_idx": "914",
+          "task_category": "handle_time",
+          "task_query": "In the past 4 quarters, which agent achieved the lowest average handle time among those managing more than 1 case? Return only the Id of the agent.",
+          "dataset_reference": {
+            "source": "Salesforce/CRMArenaPro",
+            "split": "b2b",
+            "idx": "914",
+            "reward_metric": "exact_match"
+          },
+          "entropic": {
+            "crm_reward": 0,
+            "total_score": 53.112,
+            "dimension_scores": {
+              "FUNCTIONAL": 30,
+              "DRIFT_ADAPTATION": 0,
+              "TOKEN_EFFICIENCY": 99.1,
+              "QUERY_EFFICIENCY": 98.5,
+              "ERROR_RECOVERY": 30,
+              "TRAJECTORY_EFFICIENCY": 100,
+              "HALLUCINATION_RATE": 100
+            },
+            "success": false
+          },
+          "crm_reward": 0,
+          "total_score": 53.112,
+          "dimension_scores": {
+            "FUNCTIONAL": 30,
+            "DRIFT_ADAPTATION": 0,
+            "TOKEN_EFFICIENCY": 99.1,
+            "QUERY_EFFICIENCY": 98.5,
+            "ERROR_RECOVERY": 30,
+            "TRAJECTORY_EFFICIENCY": 100,
+            "HALLUCINATION_RATE": 100
+          },
+          "agent_answer": "-12 months",
+          "expected_answer": "['005Wt000003NJ6gIAG']",
+          "success": false,
+          "metrics": {
+            "turns": 1,
+            "tokens_estimate": 225,
+            "tool_calls": 3,
+            "queries": 1
+          },
+          "timing": {
+            "total_seconds": 26.11,
+            "purple_agent_seconds": 25.69,
+            "green_agent_seconds": 0.42,
+            "purple_agent_percent": 98.4
+          },
+          "original": {
+            "reward": 0,
+            "parsed_answer": [
+              "None"
+            ]
+          }
+        }
+      ],
+      "entropic": {
+        "summary": {
+          "pass_rate": 0.4,
+          "total_tasks": 5,
+          "total_passed": 2,
+          "avg_score": 71.2
+        },
+        "dimension_averages": {
+          "FUNCTIONAL": 58.0,
+          "DRIFT_ADAPTATION": 40.0,
+          "TOKEN_EFFICIENCY": 99.2,
+          "QUERY_EFFICIENCY": 99.4,
+          "ERROR_RECOVERY": 58.0,
+          "TRAJECTORY_EFFICIENCY": 100.0,
+          "HALLUCINATION_RATE": 92.0
+        },
+        "by_category": {
+          "sales_insight_mining": {
+            "count": 1,
+            "passed": 1,
+            "total_score": 99.89824,
+            "pass_rate": 1.0,
+            "avg_score": 99.89824
+          },
+          "monthly_trend_analysis": {
+            "count": 1,
+            "passed": 1,
+            "total_score": 98.3472,
+            "pass_rate": 1.0,
+            "avg_score": 98.3472
+          },
+          "best_region_identification": {
+            "count": 1,
+            "passed": 0,
+            "total_score": 53.1216,
+            "pass_rate": 0.0,
+            "avg_score": 53.1216
+          },
+          "conversion_rate_comprehension": {
+            "count": 1,
+            "passed": 0,
+            "total_score": 51.71024,
+            "pass_rate": 0.0,
+            "avg_score": 51.71024
+          },
+          "handle_time": {
+            "count": 1,
+            "passed": 0,
+            "total_score": 53.112,
+            "pass_rate": 0.0,
+            "avg_score": 53.112
+          }
+        }
+      },
+      "summary": {
+        "pass_rate": 0.4,
+        "total_tasks": 5,
+        "total_passed": 2,
+        "avg_score": 71.2
+      },
+      "dimension_averages": {
+        "FUNCTIONAL": 58.0,
+        "DRIFT_ADAPTATION": 40.0,
+        "TOKEN_EFFICIENCY": 99.2,
+        "QUERY_EFFICIENCY": 99.4,
+        "ERROR_RECOVERY": 58.0,
+        "TRAJECTORY_EFFICIENCY": 100.0,
+        "HALLUCINATION_RATE": 92.0
+      },
+      "by_category": {
+        "sales_insight_mining": {
+          "count": 1,
+          "passed": 1,
+          "total_score": 99.89824,
+          "pass_rate": 1.0,
+          "avg_score": 99.89824
+        },
+        "monthly_trend_analysis": {
+          "count": 1,
+          "passed": 1,
+          "total_score": 98.3472,
+          "pass_rate": 1.0,
+          "avg_score": 98.3472
+        },
+        "best_region_identification": {
+          "count": 1,
+          "passed": 0,
+          "total_score": 53.1216,
+          "pass_rate": 0.0,
+          "avg_score": 53.1216
+        },
+        "conversion_rate_comprehension": {
+          "count": 1,
+          "passed": 0,
+          "total_score": 51.71024,
+          "pass_rate": 0.0,
+          "avg_score": 51.71024
+        },
+        "handle_time": {
+          "count": 1,
+          "passed": 0,
+          "total_score": 53.112,
+          "pass_rate": 0.0,
+          "avg_score": 53.112
+        }
+      },
+      "extension_metrics": {
+        "drift_level": "medium",
+        "rot_level": "medium",
+        "org_type": "b2b",
+        "skip_original": false
+      },
+      "timestamp": "2026-03-01T13:36:30.843517",
+      "version": "2.0.0",
+      "original": {
+        "scores": {
+          "accuracy": 0.4,
+          "accuracy_percent": 40.0
+        },
+        "summary": {
+          "total_tasks": 5,
+          "passed": 2,
+          "failed": 3
+        },
+        "by_category": {
+          "sales_insight_mining": {
+            "total": 1,
+            "passed": 1,
+            "accuracy": 1.0
+          },
+          "monthly_trend_analysis": {
+            "total": 1,
+            "passed": 1,
+            "accuracy": 1.0
+          },
+          "best_region_identification": {
+            "total": 1,
+            "passed": 0,
+            "accuracy": 0.0
+          },
+          "conversion_rate_comprehension": {
+            "total": 1,
+            "passed": 0,
+            "accuracy": 0.0
+          },
+          "handle_time": {
+            "total": 1,
+            "passed": 0,
+            "accuracy": 0.0
+          }
+        },
+        "by_metric_type": {
+          "exact_match": {
+            "total": 4,
+            "passed": 1,
+            "accuracy": 0.25
+          },
+          "fuzzy_match": {
+            "total": 1,
+            "passed": 1,
+            "accuracy": 1.0
+          }
+        }
+      },
+      "timing": {
+        "total_seconds": 66.89,
+        "purple_agent_seconds": 61.03,
+        "green_agent_seconds": 2.24,
+        "avg_seconds_per_task": 13.38,
+        "purple_agent_percent": 91.2
+      }
+    }
+  ]
+}
