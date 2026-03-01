@@ -3,7 +3,7 @@ agentbeats_id = "019ba211-13b7-7e83-9086-c8015a5e4957"
 env = { OPENAI_API_KEY = "${OPENAI_API_KEY}" }
 
 [[participants]]
-agentbeats_id = "<purple_agent_id>"
+agentbeats_id = "019ba27e-3b82-7d43-8822-51357ccd4861"
 name = "agent"
 env = { OPENAI_API_KEY = "${OPENAI_API_KEY}" }
 
@@ -11,4 +11,4 @@ env = { OPENAI_API_KEY = "${OPENAI_API_KEY}" }
 # task_limit is optional - for quick validations only
 # If omitted or not set, runs ALL 2,140 tasks (full benchmark)
 # Example: task_limit = 10 for quick testing
-task_limit = 5
+task_limit = 30
