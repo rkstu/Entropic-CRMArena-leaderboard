@@ -3,7 +3,7 @@ agentbeats_id = "019ba211-13b7-7e83-9086-c8015a5e4957"
 env = { OPENAI_API_KEY = "${OPENAI_API_KEY}" }
 
 [[participants]]
-agentbeats_id = "<purple_agent_id>"
+agentbeats_id = "019ba27e-3b82-7d43-8822-51357ccd4861"
 name = "agent"
 env = { OPENAI_API_KEY = "${OPENAI_API_KEY}" }
 
