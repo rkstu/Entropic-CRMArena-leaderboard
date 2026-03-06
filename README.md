@@ -16,34 +16,6 @@ This leaderboard evaluates purple agents against the [Entropic CRMArena](https:/
 
 **Note:** `task_limit` is optional for quick testing. Omit it to run the full 2,140 task benchmark.
 
----
-
-## Leaderboard SQL Queries (for AgentBeats UI)
-
-Configure these queries in the [AgentBeats UI](https://agentbeats.dev) when editing your green agent.
-
-**Copy the entire JSON block below** and paste it in the AgentBeats green agent edit page under "Leaderboard Config":
-
-```json
-[
-  {
-    "name": "Overall Performance",
-    "query": "SELECT id, ROUND(pass_rate * 100, 1) AS \"Pass Rate %\", ROUND(avg_score, 1) AS \"Entropic Score\", total_tasks AS \"Tasks\", total_passed AS \"Passed\", run_time AS \"Run Time\" FROM (SELECT r.participants.agent AS id, res.summary.pass_rate AS pass_rate, res.summary.avg_score AS avg_score, res.summary.total_tasks AS total_tasks, res.summary.total_passed AS total_passed, res.timestamp AS run_time, ROW_NUMBER() OVER (PARTITION BY r.participants.agent ORDER BY res.summary.pass_rate DESC, res.summary.avg_score DESC) AS rn FROM results r CROSS JOIN UNNEST(r.results) AS t(res) WHERE res.summary.total_tasks = (SELECT MAX(res2.summary.total_tasks) FROM results r2 CROSS JOIN UNNEST(r2.results) AS t2(res2))) sub WHERE rn = 1 ORDER BY pass_rate DESC, avg_score DESC"
-  },
-  {
-    "name": "Entropic Scores",
-    "query": "SELECT r.participants.agent AS id, ROUND(COALESCE(res.dimension_averages.FUNCTIONAL, 0), 1) AS \"Functional\", ROUND(COALESCE(res.dimension_averages.DRIFT_ADAPTATION, 0), 1) AS \"Drift Adapt\", ROUND(COALESCE(res.dimension_averages.TOKEN_EFFICIENCY, 0), 1) AS \"Token Eff\", ROUND(COALESCE(res.dimension_averages.QUERY_EFFICIENCY, 0), 1) AS \"Query Eff\", ROUND(COALESCE(res.dimension_averages.ERROR_RECOVERY, 0), 1) AS \"Error Rec\", ROUND(COALESCE(res.dimension_averages.TRAJECTORY_EFFICIENCY, 0), 1) AS \"Trajectory Eff\", ROUND(COALESCE(res.dimension_averages.HALLUCINATION_RATE, 0), 1) AS \"No Hallucination\", res.summary.total_tasks AS \"Tasks\" FROM results r CROSS JOIN UNNEST(r.results) AS t(res) WHERE res.summary.total_tasks = (SELECT MAX(res2.summary.total_tasks) FROM results r2 CROSS JOIN UNNEST(r2.results) AS t2(res2)) ORDER BY res.dimension_averages.FUNCTIONAL DESC"
-  },
-  {
-    "name": "Original Scores",
-    "query": "SELECT r.participants.agent AS id, ROUND(COALESCE(res.original.scores.accuracy_percent, 0), 1) AS \"Accuracy %\", COALESCE(res.original.summary.passed, 0) AS \"Passed\", COALESCE(res.original.summary.failed, 0) AS \"Failed\", COALESCE(res.original.summary.total_tasks, res.summary.total_tasks) AS \"Tasks\", res.timestamp AS \"Run Time\" FROM results r CROSS JOIN UNNEST(r.results) AS t(res) WHERE res.summary.total_tasks = (SELECT MAX(res2.summary.total_tasks) FROM results r2 CROSS JOIN UNNEST(r2.results) AS t2(res2)) ORDER BY res.original.scores.accuracy_percent DESC NULLS LAST"
-  },
-  {
-    "name": "All Runs",
-    "query": "SELECT r.participants.agent AS id, ROUND(res.summary.pass_rate * 100, 1) AS \"Pass Rate %\", ROUND(res.summary.avg_score, 1) AS \"Entropic Score\", ROUND(COALESCE(res.original.scores.accuracy_percent, 0), 1) AS \"Original %\", res.summary.total_tasks AS \"Tasks\", res.timestamp AS \"Run Time\" FROM results r CROSS JOIN UNNEST(r.results) AS t(res) ORDER BY res.timestamp DESC"
-  }
-]
-```
 
 ### Query Explanation
 
