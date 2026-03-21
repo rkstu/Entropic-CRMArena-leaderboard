@@ -1,0 +1,14 @@
+[green_agent]
+agentbeats_id = "019ba211-13b7-7e83-9086-c8015a5e4957"
+env = { OPENAI_API_KEY = "${OPENAI_API_KEY}" }
+
+[[participants]]
+agentbeats_id = "019d0747-e8ee-75e2-a899-3a0ac4d0afc8"
+name = "agent"
+env = { OPENAI_PRIMARY_API_KEY = "${OPENAI_PRIMARY_API_KEY}", OPENAI_CHEAP_API_KEY = "${OPENAI_CHEAP_API_KEY}", LLM_PRIMARY_BASE_URL = "${LLM_PRIMARY_BASE_URL}", LLM_CHEAP_BASE_URL = "${LLM_CHEAP_BASE_URL}", LLM_PRIMARY_MODEL = "${LLM_PRIMARY_MODEL}", LLM_CHEAP_MODEL = "${LLM_CHEAP_MODEL}" }
+
+[config]
+# task_limit is optional - for quick validations only
+# If omitted or not set, runs ALL 2,140 tasks (full benchmark)
+# Example: task_limit = 10 for quick testing
+task_limit = 20

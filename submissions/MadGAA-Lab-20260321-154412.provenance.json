@@ -1,0 +1,17 @@
+{
+  "image_digests": {
+    "green-agent": "ghcr.io/rkstu/entropic-crmarena-green@sha256:f801c2584235faa0750eae35eeba494107919a59eb12bb4e53ede15e9ff620d3",
+    "agent": "ghcr.io/madgaa-lab/crm-agent-phase2_dev@sha256:a1a6a7c1dff6826d99eacf462133a428061b1a5cd1c3522033e636d14b456f09",
+    "agentbeats-client": "ghcr.io/agentbeats/agentbeats-client@sha256:13dfe3ef4e583a80e7ce2fe3becd0ce3b879841368a7f4fa40b6ebbabeeb014e"
+  },
+  "timestamp": "2026-03-21T15:44:12Z",
+  "github_actions": {
+    "run_url": "https://github.com/MadGAA-Lab/Entropic-CRMArena-leaderboard-submission/actions/runs/23382815177",
+    "run_logs_url": "https://api.github.com/repos/MadGAA-Lab/Entropic-CRMArena-leaderboard-submission/actions/runs/23382815177/logs",
+    "ref": "refs/heads/main",
+    "sha": "ad22835e27af9e61c5305cd1e9f29f8a82a03beb",
+    "repository_url": "https://github.com/MadGAA-Lab/Entropic-CRMArena-leaderboard-submission",
+    "workflow_ref": "MadGAA-Lab/Entropic-CRMArena-leaderboard-submission/.github/workflows/run-scenario.yml@refs/heads/main",
+    "workflow_sha": "ad22835e27af9e61c5305cd1e9f29f8a82a03beb"
+  }
+}
